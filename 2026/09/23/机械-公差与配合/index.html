@@ -1,0 +1,464 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>机械 - 公差与配合 | 不是小阳の小破站</title><meta name="author" content="不是小阳"><meta name="copyright" content="不是小阳"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="机械制图 - 公差与配合一、互换性与标准化互换性是指在同一规格的一批零部件中，可以不经选择、调整或修配，任取一件装配在机器上，并能达到规定的使用性能要求。按互换性原则组织生产，可合理进行生产分工和专业化协作，便于采用高效专用设备，缩短生产周期、降低成本，便于装配自动化。 公差与配合的国家标准体系主要包括：GB&#x2F;T 1800.1—2020《产品几何技术规范（GPS） 线性尺寸公差ISO代号">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机械 - 公差与配合">
+<meta property="og:url" content="http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/index.html">
+<meta property="og:site_name" content="不是小阳の小破站">
+<meta property="og:description" content="机械制图 - 公差与配合一、互换性与标准化互换性是指在同一规格的一批零部件中，可以不经选择、调整或修配，任取一件装配在机器上，并能达到规定的使用性能要求。按互换性原则组织生产，可合理进行生产分工和专业化协作，便于采用高效专用设备，缩短生产周期、降低成本，便于装配自动化。 公差与配合的国家标准体系主要包括：GB&#x2F;T 1800.1—2020《产品几何技术规范（GPS） 线性尺寸公差ISO代号">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://bushixiaoyang.online/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png">
+<meta property="article:published_time" content="2026-09-23T13:38:10.000Z">
+<meta property="article:modified_time" content="2026-09-23T14:13:20.402Z">
+<meta property="article:author" content="不是小阳">
+<meta property="article:tag" content="机械">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://bushixiaoyang.online/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "机械 - 公差与配合",
+  "url": "http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/",
+  "image": "http://bushixiaoyang.online/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png",
+  "datePublished": "2026-09-23T13:38:10.000Z",
+  "dateModified": "2026-09-23T14:13:20.402Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "不是小阳",
+      "url": "https://bushixiaoyang.online"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 不是小阳","link":"链接: ","source":"来源: 不是小阳の小破站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '机械 - 公差与配合',
+  isHighlightShrink: undefined,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background-image: url(/img/%E6%99%9A%E9%9C%9E%E6%B5%B7%E6%BB%A9.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E4%BA%8E%E6%96%87%E4%BA%AE.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tucao/"><i class="fa-fw fas fa-comment-dots"></i><span> 吐槽</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/%5Cimg%5C%E9%BB%84%E5%8F%91%E5%8A%A8%E6%BC%AB%E7%BE%8E%E5%A5%B3.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">不是小阳の小破站</span></a><a class="nav-page-title" href="/"><span class="site-name">机械 - 公差与配合</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tucao/"><i class="fa-fw fas fa-comment-dots"></i><span> 吐槽</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">机械 - 公差与配合</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-09-23T13:38:10.000Z" title="发表于 2026-09-23 21:38:10">2026-09-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-09-23T14:13:20.402Z" title="更新于 2026-09-23 22:13:20">2026-09-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%9C%BA%E6%A2%B0%E5%88%B6%E5%9B%BE/">机械制图</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="机械制图-公差与配合"><a href="#机械制图-公差与配合" class="headerlink" title="机械制图 - 公差与配合"></a>机械制图 - 公差与配合</h1><h2 id="一、互换性与标准化"><a href="#一、互换性与标准化" class="headerlink" title="一、互换性与标准化"></a>一、互换性与标准化</h2><p>互换性是指在同一规格的一批零部件中，可以不经选择、调整或修配，任取一件装配在机器上，并能达到规定的使用性能要求。按互换性原则组织生产，可合理进行生产分工和专业化协作，便于采用高效专用设备，缩短生产周期、降低成本，便于装配自动化。</p>
+<p>公差与配合的国家标准体系主要包括：GB&#x2F;T 1800.1—2020《产品几何技术规范（GPS） 线性尺寸公差ISO代号体系 第1部分：公差、偏差和配合的基础》、GB&#x2F;T 1800.2—2020《第2部分：标准公差等级和孔、轴极限偏差表》、GB&#x2F;T 1801—2009《极限与配合 公差带和配合的选择》、GB&#x2F;T 1803—2003《极限与配合 尺寸至18mm孔、轴公差带》、GB&#x2F;T 1804—2000《一般公差 未注公差的线性和角度尺寸的公差》等。</p>
+<h2 id="二、基本术语及定义"><a href="#二、基本术语及定义" class="headerlink" title="二、基本术语及定义"></a>二、基本术语及定义</h2><h3 id="（一）孔与轴"><a href="#（一）孔与轴" class="headerlink" title="（一）孔与轴"></a>（一）孔与轴</h3><ul>
+<li><strong>孔</strong>：通常指工件的圆柱形内表面，也包括非圆柱形内表面（由两平行平面或切面形成的包容面），孔径用大写字母D表示。</li>
+<li><strong>轴</strong>：通常指工件的圆柱形外表面，也包括非圆柱形外表面（由两平行平面或切面形成的被包容面），用小写字母d表示。</li>
+<li>从装配关系讲，孔为包容面，在它之内无材料；轴为被包容面，在它之外无材料。</li>
+</ul>
+<h3 id="（二）尺寸相关术语"><a href="#（二）尺寸相关术语" class="headerlink" title="（二）尺寸相关术语"></a>（二）尺寸相关术语</h3><ul>
+<li><strong>公称尺寸</strong>（旧称基本尺寸）：通过它应用上、下极限偏差可算出极限尺寸的尺寸，通常由设计者给定，用D和d表示。</li>
+<li><strong>实际尺寸</strong>：通过测量获得的某一孔、轴的尺寸。</li>
+<li><strong>极限尺寸</strong>：一个孔或轴允许的尺寸的两个极端，实际尺寸应位于其中，也可达到极限尺寸。较大的称为上极限尺寸（Dmax、dmax），较小的称为下极限尺寸（Dmin、dmin）。</li>
+</ul>
+<h3 id="（三）偏差与公差"><a href="#（三）偏差与公差" class="headerlink" title="（三）偏差与公差"></a>（三）偏差与公差</h3><ul>
+<li><strong>偏差</strong>：某一尺寸（实际尺寸、极限尺寸等）减其公称尺寸所得的代数差，其值可正、可负或零。<ul>
+<li>上极限偏差（孔ES、轴es）&#x3D; 上极限尺寸 − 公称尺寸</li>
+<li>下极限偏差（孔EI、轴ei）&#x3D; 下极限尺寸 − 公称尺寸</li>
+</ul>
+</li>
+<li><strong>尺寸公差（公差）</strong> ：最大极限尺寸减最小极限尺寸之差，或上偏差减下偏差之差，是允许尺寸的变动量，是一个没有符号的绝对值。</li>
+</ul>
+<h3 id="（四）间隙与过盈"><a href="#（四）间隙与过盈" class="headerlink" title="（四）间隙与过盈"></a>（四）间隙与过盈</h3><ul>
+<li><strong>间隙</strong>：孔的尺寸减去相配合的轴的尺寸之差为正。</li>
+<li><strong>过盈</strong>：孔的尺寸减去相配合的轴的尺寸之差为负。</li>
+</ul>
+<h3 id="（五）零线"><a href="#（五）零线" class="headerlink" title="（五）零线"></a>（五）零线</h3><p>在极限与配合图解中，表示公称尺寸的一条直线，以其为基准确定偏差和公差。通常零线沿水平方向绘制，正偏差位于其上，负偏差位于其下。</p>
+<h2 id="三、标准公差与基本偏差"><a href="#三、标准公差与基本偏差" class="headerlink" title="三、标准公差与基本偏差"></a>三、标准公差与基本偏差</h2><h3 id="（一）标准公差等级"><a href="#（一）标准公差等级" class="headerlink" title="（一）标准公差等级"></a>（一）标准公差等级</h3><p>标准公差等级代号用符号IT和数字表示，如IT7。标准公差等级分IT01、IT0、IT1至IT18共20级。从IT01至IT18级，公差等级依次降低，相应的标准公差数值则依次增大。对尺寸≤500mm的更高等级（如IT01、IT0和IT1等级），主要考虑测量误差，公差计算采用线性关系式。标准公差数值由公差等级系数和标准公差因子的乘积确定。</p>
+<h3 id="（二）基本偏差"><a href="#（二）基本偏差" class="headerlink" title="（二）基本偏差"></a>（二）基本偏差</h3><p>基本偏差是指在极限与配合制中，确定公差带相对于零线位置的那个极限偏差。它可以是上偏差或下偏差，一般为靠近零线的那个偏差。</p>
+<p>基本偏差代号，对孔用大写字母A、…、ZC表示，对轴用小写字母a、…、zc表示，各28个。其中，基本偏差H代表基准孔；h代表基准轴。</p>
+<p>在孔的基本偏差中：A～H为下偏差EI，其绝对值依次减小；J～ZC为上偏差ES（除J和K外）。对轴的基本偏差：a～h为上偏差es；j～zc为下偏差ei（除j和k外）。JS（js）的上、下极限偏差是对称的，上极限偏差值为+IT&#x2F;2，下极限偏差值为−IT&#x2F;2。除J（j）以外，A～ZC（a～zc）标准公差等级齐全，分别能与20个公差等级组成公差带。</p>
+<h3 id="（三）公差带"><a href="#（三）公差带" class="headerlink" title="（三）公差带"></a>（三）公差带</h3><p>公差带在公差带图解中，由代表上偏差和下偏差或最大极限尺寸和最小极限尺寸的两条直线所限定的一个区域。它由公差大小和其相对零线的位置（如基本偏差）来确定。公差带用基本偏差的字母和公差等级数字表示，如孔公差带H7，轴公差带h7。</p>
+<p>孔、轴尺寸公差代号由基本偏差代号与公差等级代号组成，如H7、h7。基准孔的基本偏差是下偏差，且等于零，即EI&#x3D;0，以基本偏差代号H表示，应优先选用。</p>
+<h2 id="四、配合"><a href="#四、配合" class="headerlink" title="四、配合"></a>四、配合</h2><h3 id="（一）配合的定义与分类"><a href="#（一）配合的定义与分类" class="headerlink" title="（一）配合的定义与分类"></a>（一）配合的定义与分类</h3><p>基本尺寸相同的、相互结合的孔和轴公差带之间的关系称配合。配合分为三类：</p>
+<ul>
+<li><strong>间隙配合</strong>：具有间隙（包括最小间隙为零）的配合。最小间隙≥0。</li>
+<li><strong>过盈配合</strong>：具有过盈（包括最小过盈为零）的配合。最大间隙≤0。</li>
+<li><strong>过渡配合</strong>：可能具有间隙或过盈的配合。</li>
+</ul>
+<h3 id="（二）配合公差"><a href="#（二）配合公差" class="headerlink" title="（二）配合公差"></a>（二）配合公差</h3><p>组成配合的孔、轴公差之和称配合公差，它是允许间隙或过盈的变动量，是一个没有符号的绝对值。</p>
+<ul>
+<li>间隙配合的配合公差 Tf &#x3D; |Xmax − Xmin|</li>
+<li>过盈配合的配合公差 Tf &#x3D; |Ymax − Ymin|</li>
+<li>过渡配合的配合公差 Tf &#x3D; Xmax + Ymax（即最大极限间隙和最大极限过盈之和）</li>
+</ul>
+<h3 id="（三）基准制"><a href="#（三）基准制" class="headerlink" title="（三）基准制"></a>（三）基准制</h3><h3 id="3-1-什么是基准制"><a href="#3-1-什么是基准制" class="headerlink" title="3.1 什么是基准制"></a>3.1 什么是基准制</h3><p>要获得各种不同性质的配合，如果孔和轴的公差带位置都可以自由变动，组合数量将极其庞大，不便于标准化生产。国家标准规定了两种<strong>基准制</strong>，即固定其中一个零件的公差带位置，通过改变另一个零件的公差带位置来获得各种配合。</p>
+<h3 id="3-2-基孔制"><a href="#3-2-基孔制" class="headerlink" title="3.2 基孔制"></a>3.2 基孔制</h3><p><strong>定义</strong>：基本偏差为一定的孔的公差带，与不同基本偏差的轴的公差带形成各种配合的一种制度。</p>
+<p>基孔制中的孔称为<strong>基准孔</strong>，其基本偏差代号为 <strong>H</strong> ，<strong>下偏差EI &#x3D; 0</strong>。即基准孔的最小极限尺寸等于基本尺寸，孔的公差带位于零线上方（或下偏差为零线）。</p>
+<p>在基孔制中，基准孔H与不同基本偏差的轴配合时：</p>
+<ul>
+<li>轴的基本偏差为 <strong>a～h</strong> 时，形成<strong>间隙配合</strong></li>
+<li>轴的基本偏差为 <strong>j～n</strong> 时，主要用于<strong>过渡配合</strong></li>
+<li>轴的基本偏差为 <strong>p～zc</strong> 时，主要用于<strong>过盈配合</strong></li>
+</ul>
+<h3 id="3-3-基轴制"><a href="#3-3-基轴制" class="headerlink" title="3.3 基轴制"></a>3.3 基轴制</h3><p><strong>定义</strong>：基本偏差为一定的轴的公差带，与不同基本偏差的孔的公差带形成各种配合的一种制度。</p>
+<p>基轴制中的轴称为<strong>基准轴</strong>，其基本偏差代号为 <strong>h</strong> ，<strong>上偏差es &#x3D; 0</strong>。即基准轴的最大极限尺寸等于基本尺寸，轴的公差带位于零线下方（或上偏差为零线）。</p>
+<p>在基轴制中，基准轴h与不同基本偏差的孔配合时：</p>
+<ul>
+<li>孔的基本偏差为 <strong>A～H</strong> 时，形成<strong>间隙配合</strong></li>
+<li>孔的基本偏差为 <strong>J～N</strong> 时，主要用于<strong>过渡配合</strong></li>
+<li>孔的基本偏差为 <strong>P～ZC</strong> 时，主要用于<strong>过盈配合</strong></li>
+</ul>
+<h3 id="3-4-基孔制与基轴制的核心区别"><a href="#3-4-基孔制与基轴制的核心区别" class="headerlink" title="3.4 基孔制与基轴制的核心区别"></a>3.4 基孔制与基轴制的核心区别</h3><table>
+<thead>
+<tr>
+<th>对比维度</th>
+<th>基孔制</th>
+<th>基轴制</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>基准件</strong></td>
+<td>孔（基准孔）</td>
+<td>轴（基准轴）</td>
+</tr>
+<tr>
+<td><strong>基准件代号</strong></td>
+<td>H</td>
+<td>h</td>
+</tr>
+<tr>
+<td><strong>基准件偏差特征</strong></td>
+<td>下偏差 EI &#x3D; 0</td>
+<td>上偏差 es &#x3D; 0</td>
+</tr>
+<tr>
+<td><strong>公差带位置</strong></td>
+<td>孔公差带在零线上方</td>
+<td>轴公差带在零线下方</td>
+</tr>
+<tr>
+<td><strong>非基准件变化</strong></td>
+<td>改变轴的公差带位置</td>
+<td>改变孔的公差带位置</td>
+</tr>
+<tr>
+<td><strong>获得间隙配合</strong></td>
+<td>轴的基本偏差 a～h</td>
+<td>孔的基本偏差 A～H</td>
+</tr>
+<tr>
+<td><strong>获得过渡配合</strong></td>
+<td>轴的基本偏差 j～n</td>
+<td>孔的基本偏差 J～N</td>
+</tr>
+<tr>
+<td><strong>获得过盈配合</strong></td>
+<td>轴的基本偏差 p～zc</td>
+<td>孔的基本偏差 P～ZC</td>
+</tr>
+<tr>
+<td><strong>工艺特点</strong></td>
+<td>轴加工方便，成本低</td>
+<td>孔加工需定尺寸刀具（铰刀、拉刀），成本较高</td>
+</tr>
+<tr>
+<td><strong>优先选用</strong></td>
+<td>✅ 一般优先采用</td>
+<td>在特定条件下采用</td>
+</tr>
+</tbody></table>
+<h3 id="3-5-为什么优先选用基孔制"><a href="#3-5-为什么优先选用基孔制" class="headerlink" title="3.5 为什么优先选用基孔制"></a>3.5 为什么优先选用基孔制</h3><p>在常用尺寸范围（500mm以下），一般应优先选用基孔制。原因在于：孔的加工通常需要使用定尺寸刀具（如钻头、铰刀、拉刀）和定尺寸量具（如塞规），如果孔的公差带位置不固定，就需要大量不同规格的刀具和量具，增加生产成本。而轴的加工通常用车削、磨削等方式，不受定尺寸刀具限制，改变轴的公差带位置相对容易且经济。因此，<strong>固定孔的公差带、通过改变轴的公差带来获得不同配合，是成本更低的选择</strong>。</p>
+<h3 id="3-6-何时选用基轴制"><a href="#3-6-何时选用基轴制" class="headerlink" title="3.6 何时选用基轴制"></a>3.6 何时选用基轴制</h3><p>在以下情况中，选用基轴制更为合理。</p>
+<p><strong>第一，直接使用冷拉圆钢做轴时。</strong> 冷拉圆钢的外径已经按一定公差等级制造，不需要再进行切削加工。此时如果还要按基孔制去改变轴的尺寸，反而增加了加工工序，不如以这根现成的轴为基准来加工孔。</p>
+<p><strong>第二，同一基本尺寸的轴上有多个不同配合要求的零件时。</strong> 例如活塞销与活塞销孔、连杆小头孔的配合，如果采用基孔制，活塞销需要做成阶梯轴，给加工和装配都带来困难，还会降低强度。采用基轴制则可以使活塞销保持同一尺寸，仅改变各孔的公差带。</p>
+<p><strong>第三，与标准件配合时，基准制依标准件而定。</strong> 这是最典型的情况。滚动轴承是标准件，其<strong>内圈与轴的配合采用基孔制</strong>（因为内圈内孔是基准孔），<strong>外圈与轴承座孔的配合采用基轴制</strong>（因为外圈外径是基准轴）。同理，键与键槽的配合采用基轴制，圆柱销与销孔的配合也采用基轴制。</p>
+<h3 id="3-7-公差与配合在图样上的标注"><a href="#3-7-公差与配合在图样上的标注" class="headerlink" title="3.7 公差与配合在图样上的标注"></a>3.7 公差与配合在图样上的标注</h3><p>在<strong>装配图</strong>上，配合代号用分数的形式标注，分子为孔的公差带代号，分母为轴的公差带代号。例如：φ30 <strong>H7&#x2F;f6</strong> 表示基本尺寸30mm的基孔制间隙配合（孔H7，轴f6）。判断规则：分子中含H的为基孔制，分母中含h的为基轴制。</p>
+<p>在<strong>零件图</strong>上，孔或轴的公差标注有三种形式：</p>
+<ol>
+<li>只注公差带代号：φ30H7（孔）、φ30f6（轴）</li>
+<li>只注极限偏差数值：φ30⁺⁰·⁰²¹₀（孔）</li>
+<li>两者同时标注：φ30H7（⁺⁰·⁰²¹₀）</li>
+</ol>
+<h3 id="（四）配合公差带图"><a href="#（四）配合公差带图" class="headerlink" title="（四）配合公差带图"></a>（四）配合公差带图</h3><p>配合公差带图用来直观地表达配合性质，即反映配合松紧及其变动情况。在配合公差带图中，横坐标为零线，表示间隙或过盈为零；零线上方的纵坐标为正值（间隙），零线下方的纵坐标为负值（过盈）。</p>
+<h3 id="（五）极限间隙与极限过盈的计算"><a href="#（五）极限间隙与极限过盈的计算" class="headerlink" title="（五）极限间隙与极限过盈的计算"></a>（五）极限间隙与极限过盈的计算</h3><p>对于基孔制配合，孔的下偏差EI&#x3D;0，上偏差ES&#x3D;+IT_孔。轴的基本偏差示例：es_g&#x3D;−2.5·D^0.34，es_f&#x3D;−5.5·D^0.41，ei_n&#x3D;+5·D^0.34（ISO 286）。</p>
+<p>最大间隙 &#x3D; ES_孔 − ei_轴，最小间隙 &#x3D; EI_孔 − es_轴。</p>
+<h2 id="五、几何公差（形位公差）"><a href="#五、几何公差（形位公差）" class="headerlink" title="五、几何公差（形位公差）"></a>五、几何公差（形位公差）</h2><h3 id="（一）基本概念"><a href="#（一）基本概念" class="headerlink" title="（一）基本概念"></a>（一）基本概念</h3><p>形位公差是工程领域对几何公差的传统称谓之一。根据2018年发布、2019年4月1日实施的现行国家标准GB&#x2F;T 1182—2018《产品几何技术规范(GPS) 几何公差 形状、方向、位置和跳动公差标注》，该技术指标通常称为“几何公差”。它是对零件几何要素（点、线、面及其组合要素）的形状、方向、位置与跳动等几何特性允许变动范围的规定。</p>
+<h3 id="（二）公差项目分类"><a href="#（二）公差项目分类" class="headerlink" title="（二）公差项目分类"></a>（二）公差项目分类</h3><p>根据GB&#x2F;T 1182—2018，几何公差项目通常分为形状公差、方向公差、位置公差和跳动公差四类，共包含14个几何特征符号。</p>
+<ul>
+<li><strong>形状公差</strong>：单一实际要素的形状对其理想要素所允许的变动量，包括直线度、平面度、圆度、圆柱度、线轮廓度、面轮廓度。</li>
+<li><strong>方向公差</strong>：关联实际被测要素对具有确定方向的理想要素的允许变动量，包括平行度、垂直度、倾斜度。</li>
+<li><strong>位置公差</strong>：关联实际被测要素对具有确定位置的理想被测要素的允许变动量，包括同轴度、对称度、位置度。</li>
+<li><strong>跳动公差</strong>：关联实际被测要素绕基准轴线作无轴向运行时回转一周或连续回转时沿给定方向所允许的最大示值跳动量，包括圆跳动、全跳动。</li>
+</ul>
+<h3 id="（三）公差框格标注"><a href="#（三）公差框格标注" class="headerlink" title="（三）公差框格标注"></a>（三）公差框格标注</h3><p>几何公差通过公差框格标注，并通过引线、尺寸线等与被测要素建立对应关系。公差框格一般从左至右依次给出：几何特征符号、公差值（必要时在公差值前加注直径符号等）。形状公差通常不需要基准，公差框格仅两格；方向公差、位置公差和跳动公差需要标注基准。</p>
+<h3 id="（四）基准与公差带"><a href="#（四）基准与公差带" class="headerlink" title="（四）基准与公差带"></a>（四）基准与公差带</h3><ul>
+<li><strong>基准</strong>：确定被测要素方向或位置的依据，可由一个或多个基准要素建立，并可按需要构成基准体系。</li>
+<li><strong>公差带</strong>：用于限定实际要素允许变动范围的区域（如两平行平面之间、圆柱体内等）。</li>
+</ul>
+<h3 id="（五）公差原则"><a href="#（五）公差原则" class="headerlink" title="（五）公差原则"></a>（五）公差原则</h3><p>公差原则是对尺寸公差与形位公差相互可否转化的规定。尺寸公差与形位公差彼此不允许转化时，为独立原则；允许转化时，为相关原则。相关原则具体可分为包容要求、最大实体要求、最小实体要求及可逆要求，具体标准见GB&#x2F;T 4249和GB&#x2F;T 16671。</p>
+<ul>
+<li><strong>独立原则</strong>：图样上给定的每一个尺寸和几何要求均是独立的，应分别满足要求。</li>
+<li><strong>包容要求</strong>：提取组成要素不得超越其最大实体边界的一种尺寸要素原则，其局部尺寸不得超出最小实体尺寸。包容要求适用于圆柱表面或两平行对应面。</li>
+</ul>
+<h3 id="（六）几何公差项目之间的关系"><a href="#（六）几何公差项目之间的关系" class="headerlink" title="（六）几何公差项目之间的关系"></a>（六）几何公差项目之间的关系</h3><p>对某一被测要素给出位置公差后，仅在其方向精度或（和）形状精度有进一步要求时，才另行给出方向公差或（和）形状公差，而方向公差值必须小于位置公差值，形状公差值必须小于方向公差值。</p>
+<h2 id="六、表面粗糙度"><a href="#六、表面粗糙度" class="headerlink" title="六、表面粗糙度"></a>六、表面粗糙度</h2><h3 id="（一）概念与评定参数"><a href="#（一）概念与评定参数" class="headerlink" title="（一）概念与评定参数"></a>（一）概念与评定参数</h3><h3 id="1-1-什么是表面粗糙度"><a href="#1-1-什么是表面粗糙度" class="headerlink" title="1.1 什么是表面粗糙度"></a>1.1 什么是表面粗糙度</h3><p>零件表面无论加工得多么精细，在显微镜下观察，总会存在高低不平的微小峰谷。加工表面上具有较小间距和微小峰谷所组成的微观几何形状特性，称为<strong>表面粗糙度</strong>。它与表面波纹度、形状误差一起构成表面结构的完整描述。</p>
+<p>表面粗糙度对零件的配合性质、耐磨性、疲劳强度、密封性和耐腐蚀性都有重要影响，是零件图样上必须标注的重要技术要求。</p>
+<h3 id="1-2-主要评定参数"><a href="#1-2-主要评定参数" class="headerlink" title="1.2 主要评定参数"></a>1.2 主要评定参数</h3><p>根据国家标准 GB&#x2F;T 3505—2009 和 GB&#x2F;T 1031—2009，表面粗糙度的高度特征参数主要有两个：</p>
+<p><strong>轮廓算术平均偏差Ra</strong>：在取样长度内，轮廓偏距绝对值的算术平均值。Ra是实际测量中最常用的参数，测量点越多，Ra越准确。</p>
+<p><strong>轮廓最大高度Rz</strong>：在取样长度内，轮廓峰顶线和轮廓谷底线之间的距离。</p>
+<blockquote>
+<p>⚠️ <strong>重要提示</strong>：2006年以前的国家标准中，Rz表示“微观不平度十点高度”，轮廓最大高度用Ry表示。GB&#x2F;T 3505—2000（及后续版本）调整了定义：取消了“微观不平度十点高度”，不再使用Ry，<strong>新的Rz为原Ry的定义</strong>，即表示轮廓最大高度。阅读旧图纸时需特别注意这一差异。</p>
+</blockquote>
+<p>在常用范围内优先选用Ra作为评定参数。当表面粗糙度很大或很小时，用光学仪器测量Rz更为方便。</p>
+<p>此外还有间距特征参数<strong>Rsm</strong>（轮廓单元的平均宽度）和形状特征参数<strong>Rmr(c)</strong>（轮廓支承长度率），用于有特殊功能要求的表面。</p>
+<h3 id="1-3-表面粗糙度符号与标注"><a href="#1-3-表面粗糙度符号与标注" class="headerlink" title="1.3 表面粗糙度符号与标注"></a>1.3 表面粗糙度符号与标注</h3><p>表面粗糙度用代号标注在图样上。代号由符号、数字及说明文字组成。</p>
+<p><strong>基本符号</strong>：由两条不等长的线段组成，与水平线约成60°角。</p>
+<p><strong>去除材料符号</strong>：在基本符号上加一条横线，表示该表面需要通过机械加工去除材料获得。</p>
+<p><strong>不去除材料符号</strong>：在基本符号上加一个圆圈，表示该表面保持铸、锻、轧制等原始状态。</p>
+<p><strong>Ra值的标注</strong>：由于Ra是最常用的高度参数，标注时数值前不必书写“Ra”代号，直接写数值即可（单位μm）。例如标注“3.2”即表示Ra &#x3D; 3.2μm。</p>
+<p><strong>标注位置</strong>：表面粗糙度代号一般注在可见轮廓线、尺寸界线、引出线或其延长线上，符号尖端必须从材料外指向被标注表面。当零件所有表面具有相同的粗糙度要求时，可在图样右上角统一标注。</p>
+<h3 id="1-4-常用Ra数值的含义与选用"><a href="#1-4-常用Ra数值的含义与选用" class="headerlink" title="1.4 常用Ra数值的含义与选用"></a>1.4 常用Ra数值的含义与选用</h3><table>
+<thead>
+<tr>
+<th align="center">Ra值（μm）</th>
+<th align="center">加工方法</th>
+<th align="left">典型应用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">12.5</td>
+<td align="center">粗车、粗铣、钻孔</td>
+<td align="left">非配合表面、倒角、不重要的自由表面</td>
+</tr>
+<tr>
+<td align="center">6.3</td>
+<td align="center">半精车、半精铣</td>
+<td align="left">一般的非配合表面、支架底面</td>
+</tr>
+<tr>
+<td align="center">3.2</td>
+<td align="center">精车、精铣、粗铰</td>
+<td align="left">箱体结合面、键和键槽、低速滑动轴承工作面</td>
+</tr>
+<tr>
+<td align="center">1.6</td>
+<td align="center">精车、精磨、精铰</td>
+<td align="left">有配合要求的表面、定心轴肩、导向面</td>
+</tr>
+<tr>
+<td align="center">0.8</td>
+<td align="center">精磨、研磨、精铰</td>
+<td align="left">高精度配合面、高速滑动轴承工作面</td>
+</tr>
+<tr>
+<td align="center">0.4及以下</td>
+<td align="center">研磨、超精加工</td>
+<td align="left">量规工作面、精密滚动轴承滚道</td>
+</tr>
+</tbody></table>
+<p>3.2μm Ra是标准的商用机器加工表面粗糙度，适用于大多数消费零件；1.6μm Ra适用于有配合精度要求的表面；0.8μm Ra适用于精密配合表面。一般冷拔管Ra约为3.2μm，冷轧管Ra约为1.6μm。</p>
+<h3 id="1-5-表面粗糙度与公差等级的对应关系"><a href="#1-5-表面粗糙度与公差等级的对应关系" class="headerlink" title="1.5 表面粗糙度与公差等级的对应关系"></a>1.5 表面粗糙度与公差等级的对应关系</h3><p>表面粗糙度与尺寸公差等级之间存在经验对应关系：公差等级越高（IT值越小），对应的表面粗糙度Ra值也越小。例如，IT6～IT7级的配合面通常要求Ra ≤ 1.6μm，IT8～IT9级对应Ra ≤ 3.2μm，IT11级以下一般对应Ra ≤ 6.3μm或更大。设计时两者应协调确定，不宜出现“高公差等级却要求很粗糙的表面”这类矛盾。</p>
+<h3 id="（二）表面粗糙度与公差等级的对应关系"><a href="#（二）表面粗糙度与公差等级的对应关系" class="headerlink" title="（二）表面粗糙度与公差等级的对应关系"></a>（二）表面粗糙度与公差等级的对应关系</h3><p>在通常情况下，机械零件尺寸公差要求越小，其表面粗糙度值也越小，但它们之间不存在固定的函数关系。在一般情况下，有尺寸公差要求的零件，其公差等级与表面粗糙度数值之间有一定的对应关系。</p>
+<p>常用对应关系（举例）：</p>
+<table>
+<thead>
+<tr>
+<th>公差等级</th>
+<th>基本尺寸≤50mm（轴&#x2F;孔）Ra</th>
+<th>基本尺寸&gt;50～500mm（轴&#x2F;孔）Ra</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>IT5</td>
+<td>0.2 &#x2F; 0.4</td>
+<td>0.4 &#x2F; 0.8</td>
+</tr>
+<tr>
+<td>IT6</td>
+<td>0.4 &#x2F; 0.4～0.8</td>
+<td>0.8 &#x2F; 0.8～1.6</td>
+</tr>
+<tr>
+<td>IT7</td>
+<td>0.4～0.8 &#x2F; 0.8</td>
+<td>0.8～1.6 &#x2F; 1.6</td>
+</tr>
+<tr>
+<td>IT8</td>
+<td>0.8 &#x2F; 0.8～1.6</td>
+<td>1.6 &#x2F; 1.6～3.2</td>
+</tr>
+</tbody></table>
+<p>配合性质相同，零件尺寸越小，其表面粗糙度值越小；同一精度等级，轴比孔的Ra值要低。</p>
+<h3 id="（三）表面粗糙度与形状公差的关系"><a href="#（三）表面粗糙度与形状公差的关系" class="headerlink" title="（三）表面粗糙度与形状公差的关系"></a>（三）表面粗糙度与形状公差的关系</h3><p>在特定加工条件下，表面粗糙度与形状公差之间存在比例关系，通常表面粗糙度Ra值可认为是形状公差值的20%～25%。</p>
+<h2 id="七、尺寸公差与配合的标注"><a href="#七、尺寸公差与配合的标注" class="headerlink" title="七、尺寸公差与配合的标注"></a>七、尺寸公差与配合的标注</h2><p>标注方法依据GB&#x2F;T 4458.5—2003《机械制图 尺寸公差与配合注法》，该标准规定了机械图样中尺寸公差与配合公差的标注方法。</p>
+<h3 id="（一）零件图上的公差注法"><a href="#（一）零件图上的公差注法" class="headerlink" title="（一）零件图上的公差注法"></a>（一）零件图上的公差注法</h3><p>线性尺寸的公差应按下列三种形式之一标注：</p>
+<ol>
+<li><strong>公差带代号标注</strong>：公差带代号注在基本尺寸的右边，如Φ50H7、Φ50h6。</li>
+<li><strong>极限偏差标注</strong>：上偏差注在基本尺寸的右上方，下偏差与基本尺寸注在同一底线上，上下偏差的数字字号比基本尺寸小一号。</li>
+<li><strong>同时标注</strong>：同时标注公差带代号和相应的极限偏差时，后者应加圆括号。</li>
+</ol>
+<h3 id="（二）装配图上的配合注法"><a href="#（二）装配图上的配合注法" class="headerlink" title="（二）装配图上的配合注法"></a>（二）装配图上的配合注法</h3><p>在装配图上标注配合代号时，必须在基本尺寸的右边用分数的形式注出，分子为孔的公差带代号，分母为轴的公差带代号，如Φ50H7&#x2F;g6。</p>
+<h3 id="（三）注公差尺寸的表示"><a href="#（三）注公差尺寸的表示" class="headerlink" title="（三）注公差尺寸的表示"></a>（三）注公差尺寸的表示</h3><p>注公差的尺寸用公称尺寸后跟所要求的公差带或（和）对应的偏差值表示，如32H7、80js15、100g6。配合用相同的基本尺寸后跟孔、轴公差带表示，孔、轴公差带写成分数形式，分子为孔公差带，分母为轴公差带，如52H7&#x2F;g6。</p>
+<h2 id="八、检验与测量"><a href="#八、检验与测量" class="headerlink" title="八、检验与测量"></a>八、检验与测量</h2><h3 id="（一）光滑极限量规"><a href="#（一）光滑极限量规" class="headerlink" title="（一）光滑极限量规"></a>（一）光滑极限量规</h3><p>光滑极限量规适用于孔与轴基本尺寸至500mm、公差等级IT6级至IT16级的光滑极限量规。泰勒原则是设计极限量规的依据，用这种极限量规检验零件，基本可以保证零件公差与配合要求。量规设计采用内缩原则：量规的尺寸公差带全部位于被检验零件的尺寸公差带以内。</p>
+<p>光滑塞规是一种用于检验工件内尺寸的精密量具，其测量标准条件为温度20℃且测力为零，不能测出被检尺寸的具体数值，只能判断被检尺寸是否合格。产品分为通端和止端，通端对应工件最小极限尺寸，止端对应工件最大极限尺寸。</p>
+<h3 id="（二）常用计量器具"><a href="#（二）常用计量器具" class="headerlink" title="（二）常用计量器具"></a>（二）常用计量器具</h3><ul>
+<li><strong>游标卡尺</strong>：适用于高度、长度、厚度、深度、外径和内径等简单几何体的尺寸测量。</li>
+<li><strong>外径千分尺</strong>：用于测量轴类零件的外径尺寸，测量精度比游标卡尺更高。</li>
+<li><strong>内径百分表</strong>：常用于测量深孔和公差精度较高的孔，主要由表、手柄主体、定位护桥、活动测头、可换测头、紧固螺钉等几部分组成，可测量10～450mm的内径，读数值有0.01、0.005、0.001三种，实际使用时常选用0.01。</li>
+</ul>
+<h3 id="（三）测量操作要点"><a href="#（三）测量操作要点" class="headerlink" title="（三）测量操作要点"></a>（三）测量操作要点</h3><p>根据被测尺寸的大小和精度要求选用量具：一要考虑测量尺寸的大小，二要考虑测量精度。检验时需判断实测尺寸是否位于极限尺寸范围之内，以确定零件是否合格。</p>
+<h2 id="九、未注公差（一般公差）"><a href="#九、未注公差（一般公差）" class="headerlink" title="九、未注公差（一般公差）"></a>九、未注公差（一般公差）</h2><p>GB&#x2F;T 1804—2000《一般公差 未注公差的线性和角度尺寸的公差》规定了未注出公差的线性和角度尺寸的一般公差等级和极限偏差数值，适用于金属切削加工的尺寸，也适用于一般的冲压加工的尺寸。该标准等效采用国际标准ISO 2768—1:1989。未注公差按m级标准（中等精度）执行。</p>
+<h2 id="十、常用优先配合"><a href="#十、常用优先配合" class="headerlink" title="十、常用优先配合"></a>十、常用优先配合</h2><h3 id="（一）基孔制优先配合"><a href="#（一）基孔制优先配合" class="headerlink" title="（一）基孔制优先配合"></a>（一）基孔制优先配合</h3><table>
+<thead>
+<tr>
+<th>配合代号</th>
+<th>配合类型</th>
+<th>典型应用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>H7&#x2F;g6</td>
+<td>间隙配合</td>
+<td>滑动轴承、需相对运动的配合</td>
+</tr>
+<tr>
+<td>H7&#x2F;h6</td>
+<td>间隙配合</td>
+<td>定位精度要求较高的可拆卸连接</td>
+</tr>
+<tr>
+<td>H7&#x2F;k6</td>
+<td>过渡配合</td>
+<td>定位销、齿轮定位</td>
+</tr>
+<tr>
+<td>H7&#x2F;n6</td>
+<td>过渡配合</td>
+<td>需较大过盈的过渡配合</td>
+</tr>
+<tr>
+<td>H7&#x2F;p6</td>
+<td>过盈配合</td>
+<td>压入后不拆卸的连接</td>
+</tr>
+<tr>
+<td>H7&#x2F;s6</td>
+<td>过盈配合</td>
+<td>永久性连接</td>
+</tr>
+</tbody></table>
+<h3 id="（二）基轴制优先配合"><a href="#（二）基轴制优先配合" class="headerlink" title="（二）基轴制优先配合"></a>（二）基轴制优先配合</h3><p>基轴制配合中，轴的基本偏差代号为h（基准轴），孔的基本偏差代号为A～H等不同字母，与基孔制形成对称关系。</p>
+<h2 id="十一、公差等级与加工方法的关系"><a href="#十一、公差等级与加工方法的关系" class="headerlink" title="十一、公差等级与加工方法的关系"></a>十一、公差等级与加工方法的关系</h2><p>常用加工方法所能达到的公差等级参考：IT5～IT6级对应精磨、研磨；IT7～IT8级对应精车、精铣；IT9～IT10级对应普通车削、铣削；IT11～IT12级对应粗车、钻孔；IT13～IT18级对应锻造、铸造等。表面粗糙度与公差等级的对应关系已在第六节中说明。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://bushixiaoyang.online">不是小阳</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/">http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://bushixiaoyang.online" target="_blank">不是小阳の小破站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%BA%E6%A2%B0/">机械</a></div><div class="post-share"><div class="social-share" data-image="/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/" title="机加工"><img class="cover" src="/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">机加工</div></div><div class="info-2"><div class="info-item-1">机加工工艺：减材、增材、焊接与数控化加工 说明：机加工种类繁多，无法绝对穷尽。以下按“减材加工 &#x2F; 增材加工”两大体系梳理主流与重要工艺，将CNC机床、加工中心作为减材加工的数控化升级形态展开，并将焊接增材（定向能量沉积类）作为增材加工的核心子类纳入。   机加工对于机械设计来讲，了解即可，在设计零件的过程中需要考虑一个零件的经济性能和互换性原理，考虑零件加工的种类方法，以及加工的一个难度，这样才能不至于设计出一些花里胡哨不实用的零件。  一、总览框架   大类 子类 典型工艺 经济性定位    减材加工 传统切削 车削、铣削、钻削、镗削、磨削、刨削、插削、拉削、锯削、攻丝、铰孔、珩磨、研磨、齿轮加工 车削对回转体最经济；磨削最贵但精度最高；拉削适合大批量    特种加工 电火花、线切割、激光、等离子、水切割、超声波、化学&#x2F;电化学、电子束、离子束 适合难切削材料、复杂形状；线切割在特定场景比传统加工更经济    数控化与加工中心 数控车床、数控铣床、加工中心、车削中心、五轴联动、数控磨床 适合多品种小批量、复杂高精度零件；五轴设备投入高但综合效率优势明显   ...</div></div></div></a><a class="pagination-related" href="/2026/09/23/%E8%87%AA%E7%94%B1%E5%BA%A6/" title="自由度"><img class="cover" src="/img/%E5%87%8C%E4%B9%B1%E9%BB%91%E5%8F%91-%E5%A3%81%E7%BA%B8.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">自由度</div></div><div class="info-2"><div class="info-item-1">自由度一、自由度的基本概念1.1 自由度的定义任何一个工件在空间直角坐标系中都有且只有六个自由度，即沿X、Y、Z三个坐标轴方向的移动自由度（分别记为 (\vec{x})、(\vec{y})、(\vec{z})）和绕这三个坐标轴的转动自由度（分别记为 (\hat{x})、(\hat{y})、(\hat{z})）。这六个独立运动决定了工件在空间中的位置和姿态。 1.2 工件定位的实质工件在夹具中定位，其实质就是根据零件加工要求，设置定位元件来限制那些影响加工精度的自由度，使工件取得正确的位置。定位的目的是使同一批工件在加工时占有一致的正确加工位置。 1.3 自由度与定位、夹紧的区别定位与夹紧是两个完全不同的概念，必须严格区分。定位是通过定位元件限制工件的自由度，使工件在夹具中占有确定的位置；夹紧是对工件施加外力，使其已确定的位置在加工过程中保持不变。约束自由度的分析不考虑外力影响，工件在外力作用下不能运动是夹紧的任务，而非定位的任务。 二、六点定位原理2.1 基本原理对于确定的刚体，如果设置相应的六个约束，分别用于限制该刚体的六个运动自由度，就可以使该自由刚体在空间有一个确定的位置，...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/09/20/%E5%B8%B8%E8%A7%81%E7%9A%84%E7%A1%AC%E5%BA%A6%E5%8D%95%E4%BD%8D/" title="常见的硬度单位"><img class="cover" src="/img/%E7%99%BD%E5%8F%91%E5%B0%91%E5%A5%B3%E6%B6%82%E9%B8%A6%E5%A2%99.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-20</div><div class="info-item-2">常见的硬度单位</div></div><div class="info-2"><div class="info-item-1">机械中的硬度测量方法，按原理主要分为划痕法、压入法和回弹法（动力法） 三大类。其中，压入法在金属材料检测中应用最广，下面会重点对比几种常见的压入硬度测试。 🔬 三大测量方式分类概览   分类 测量原理 特点与典型方法    划痕法 用已知硬度的材料刻划被测表面，根据划痕判定硬度。 主要用于矿物、涂层等，如莫氏硬度、铅笔硬度。操作简单，但精度不高。   压入法 用一定载荷将压头压入材料表面，测量压痕的面积或深度。 金属材料最常用的方法，如布氏、洛氏、维氏硬度。结果精确，应用广泛。   回弹法 用一定速度的冲头撞击材料表面，测量回弹速度或高度。 动态测试，如肖氏、里氏硬度。便携、无损，适合现场检测大型工件。   ⚙️ 常用压入硬度测试方法对比压入法是机械工程中最核心的硬度测试类别，以下是几种主要方法的详细对比： 布氏硬度 (HB) 测量原理：用硬质合金球（直径通常为10mm）以规定载荷压入表面，测量压痕直径，计算硬度值。 优点：压痕大，能反映材料较大范围的平均硬度，测量结果稳定、准确，代表性好，与抗拉强度有较好的换算关系。 缺点：压痕较大，不适合成品检验和薄壁&#x2F;小型零件。...</div></div></div></a><a class="pagination-related" href="/2026/09/20/%E6%9C%BA%E6%A2%B0%E4%B8%AD%E7%9A%84%E7%83%AD%E5%A4%84%E7%90%86%E5%8F%8A%E8%A1%A8%E9%9D%A2%E5%A4%84%E7%90%86/" title="机械中的热处理及表面处理"><img class="cover" src="/img/%E6%8A%A5%E7%BA%B8%E5%A2%99%E9%BB%91%E5%8F%91%E5%A5%B3%E5%AD%A9.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-20</div><div class="info-item-2">机械中的热处理及表面处理</div></div><div class="info-2"><div class="info-item-1">机械制造中的热处理与表面处理工艺：分类、作用与工程选型一、为什么需要热处理与表面处理在机械制造中，零件的失效往往并非整体强度不足，而是表面磨损、腐蚀或局部疲劳所致。同一材料通过不同的热处理与表面处理，其硬度、韧性、耐腐蚀性乃至疲劳寿命可以产生数量级的差异。热处理通过调控金属内部组织结构来优化整体或局部的力学性能；表面处理则在不显著改变基体整体性能的前提下，在表面构建功能性表层，实现性能的定向强化。两者常常配合使用，构成零件的完整性能保障体系。 二、热处理工艺（一）整体热处理——“四把火”整体热处理是热处理的基石，包括退火、正火、淬火、回火四种基本工艺，通过加热、保温、冷却三个环节的精准控制来改变钢的内部组织。 退火是将钢加热保温后缓慢冷却（通常随炉冷却），核心作用是降低硬度、消除内应力、细化晶粒，为切削加工或后续热处理做好组织准备。细分类型包括完全退火、球化退火、去应力退火等。例如，42CrMo齿轮毛坯经完全退火后硬度降至HB180，切削效率提升40%，刀具寿命延长2倍，同时消除锻造内应力，为后续渗碳淬火提供了良好的组织基础。 正火的加热温度略高于退火，保温后空冷，冷却速度更快，...</div></div></div></a><a class="pagination-related" href="/2026/09/23/%E8%87%AA%E7%94%B1%E5%BA%A6/" title="自由度"><img class="cover" src="/img/%E5%87%8C%E4%B9%B1%E9%BB%91%E5%8F%91-%E5%A3%81%E7%BA%B8.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-23</div><div class="info-item-2">自由度</div></div><div class="info-2"><div class="info-item-1">自由度一、自由度的基本概念1.1 自由度的定义任何一个工件在空间直角坐标系中都有且只有六个自由度，即沿X、Y、Z三个坐标轴方向的移动自由度（分别记为 (\vec{x})、(\vec{y})、(\vec{z})）和绕这三个坐标轴的转动自由度（分别记为 (\hat{x})、(\hat{y})、(\hat{z})）。这六个独立运动决定了工件在空间中的位置和姿态。 1.2 工件定位的实质工件在夹具中定位，其实质就是根据零件加工要求，设置定位元件来限制那些影响加工精度的自由度，使工件取得正确的位置。定位的目的是使同一批工件在加工时占有一致的正确加工位置。 1.3 自由度与定位、夹紧的区别定位与夹紧是两个完全不同的概念，必须严格区分。定位是通过定位元件限制工件的自由度，使工件在夹具中占有确定的位置；夹紧是对工件施加外力，使其已确定的位置在加工过程中保持不变。约束自由度的分析不考虑外力影响，工件在外力作用下不能运动是夹紧的任务，而非定位的任务。 二、六点定位原理2.1 基本原理对于确定的刚体，如果设置相应的六个约束，分别用于限制该刚体的六个运动自由度，就可以使该自由刚体在空间有一个确定的位置，...</div></div></div></a><a class="pagination-related" href="/2026/09/20/%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%A0%E5%8A%A8%E6%96%B9%E5%BC%8F/" title="常见的传动方式"><img class="cover" src="/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-20</div><div class="info-item-2">常见的传动方式</div></div><div class="info-2"><div class="info-item-1">一、带传动1. 平带 效率：0.95～0.98，打滑、张紧不足时明显下降。 传动比：摩擦式：i &#x3D; n1&#x2F;n2 ≈ d2&#x2F;d1考虑滑动：i &#x3D; d2 &#x2F; [d1(1-ε)]，ε 为滑动率，约 1%～3%。实际使用中直接测 i &#x3D; n1&#x2F;n2。 经济性：初始成本低，维护中等，寿命较短，能耗中等。适合低精度、大中心距、低速轻载，不适合精密传动。  2. V带 效率：0.92～0.96，窄V带可达 0.93～0.97。 传动比：i &#x3D; n1&#x2F;n2 ≈ d2&#x2F;d1，有滑动，传动比不准确。 经济性：初始成本低，维护中等，寿命中等，能耗中等。批量越大越便宜。适合风机、水泵、搅拌站、农业机械等对同步要求不高的场合。  3. 多楔带 效率：0.93～0.97。 传动比：i &#x3D; n1&#x2F;n2 ≈ d2&#x2F;d1，仍属摩擦传动，有微小滑动。 经济性：初始成本中等，维护中等，寿命比普通V带长，能耗较低。适合汽车附件、高速风机、空间紧凑场合。  4. 同步带 效率：0.96～0.9...</div></div></div></a><a class="pagination-related" href="/2026/09/23/%E5%8A%9B%E3%80%81%E5%8A%9B%E7%9F%A9%E3%80%81%E5%BA%94%E5%8A%9B%E4%B8%8E%E6%9D%90%E6%96%99%E6%80%A7%E8%83%BD/" title="力、力矩、应力与材料性能"><img class="cover" src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-23</div><div class="info-item-2">力、力矩、应力与材料性能</div></div><div class="info-2"><div class="info-item-1">机械基础笔记：力、力矩、应力与材料性能 逻辑主线：载荷 → 内力（力 &#x2F; 力矩 &#x2F; 扭矩 &#x2F; 弯矩）→ 应力 → 材料性能（强度 &#x2F; 刚度 &#x2F; 硬度 &#x2F; 韧性 &#x2F; 塑性 &#x2F; 疲劳强度）→ 设计校核   1. 基础量：载荷、力、力矩、应力1.1 载荷定义：使零件产生内力、变形或破坏的一切外来因素。不只是“力”，也可以是力矩、温度、压力、腐蚀、惯性力等。 分类：    类型 特点 例子    静载荷 大小、方向不随时间变化或缓慢变化 自重、缓慢加压   动载荷 随时间变化 旋转件受力、振动   交变载荷 周期性变化 轴、齿轮、弹簧   冲击载荷 瞬间作用 锻锤、冲压、碰撞   单位：  集中力：N 分布力：N&#x2F;m 面载荷 &#x2F; 压力：Pa、MPa 力矩：N·m  应用：所有强度、刚度、寿命计算的输入条件。  1.2 力定义：物体之间的相互作用，使物体运动状态改变或产生变形。三要素：大小、方向、作用点。 公式：  牛顿第二定律：( F &#x3D; ma ) 重力：( G &#x3D; m...</div></div></div></a><a class="pagination-related" href="/2026/09/20/%E6%9C%BA%E6%A2%B0%E4%B8%AD%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84%E9%87%91%E5%B1%9E%E6%9D%90%E6%96%99%E5%8F%8A%E9%9D%9E%E9%87%91%E5%B1%9E%E6%9D%90%E6%96%99/" title="机械中比较常用的金属材料及非金属材料"><img class="cover" src="/img/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB-%E7%94%B5%E9%94%AF%E4%BA%BA.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-20</div><div class="info-item-2">机械中比较常用的金属材料及非金属材料</div></div><div class="info-2"><div class="info-item-1">在机械设计中，材料的选择直接决定了零件的强度、寿命、加工成本与整体性能。以下从金属材料与非金属材料两大类出发，对常用材料进行系统介绍。  一、金属材料金属材料是目前机械设计中用量最大、应用最广泛的一类材料，具有良好的导电性、导热性、延展性，且可通过热处理大幅调整性能。按组成可分为黑色金属（铁及铁合金）和有色金属（非铁金属）两大类。 （一）黑色金属1. 碳素结构钢碳素结构钢是机械设计中最基础、最经济的钢种，含碳量一般在0.04%～1.7%之间。 Q235A是最常用的普通碳素结构钢，具有高的塑性、韧性和焊接性能，广泛用于一般要求的零件和焊接结构，如拉杆、连杆、销、轴、螺钉、螺母、支架、机座等。 45钢是最常用的优质中碳调质钢，综合力学性能良好，但淬透性较低。经调质处理后，主要用于制造强度较高的运动件，如透平机叶轮、压缩机活塞、轴、齿轮、齿条、蜗杆等。35钢强度适当、塑性较好，是各种标准件和紧固件的常用材料，适于制造曲轴、杠杆、连杆等承受较大载荷的小截面零件。 2. 合金结构钢当碳素钢的性能无法满足要求时，需在钢中加入铬、锰、镍、硅、钼、钨等合金元素以改善其性能。 40Cr是使用最广泛...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E4%BA%8E%E6%96%87%E4%BA%AE.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">不是小阳</div><div class="author-info-description">分享一些技术和一些平平无奇的生活</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/bushixiaoyang"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/bushixiaoyang" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zhanghongyang321@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到不是小阳の小破站<br>灵感本易逝，行动应当下。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%BA%E6%A2%B0%E5%88%B6%E5%9B%BE-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88"><span class="toc-number">1.</span> <span class="toc-text">机械制图 - 公差与配合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E4%BA%92%E6%8D%A2%E6%80%A7%E4%B8%8E%E6%A0%87%E5%87%86%E5%8C%96"><span class="toc-number">1.1.</span> <span class="toc-text">一、互换性与标准化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD%E5%8F%8A%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.</span> <span class="toc-text">二、基本术语及定义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%AD%94%E4%B8%8E%E8%BD%B4"><span class="toc-number">1.2.1.</span> <span class="toc-text">（一）孔与轴</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%B0%BA%E5%AF%B8%E7%9B%B8%E5%85%B3%E6%9C%AF%E8%AF%AD"><span class="toc-number">1.2.2.</span> <span class="toc-text">（二）尺寸相关术语</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%81%8F%E5%B7%AE%E4%B8%8E%E5%85%AC%E5%B7%AE"><span class="toc-number">1.2.3.</span> <span class="toc-text">（三）偏差与公差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E9%97%B4%E9%9A%99%E4%B8%8E%E8%BF%87%E7%9B%88"><span class="toc-number">1.2.4.</span> <span class="toc-text">（四）间隙与过盈</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E9%9B%B6%E7%BA%BF"><span class="toc-number">1.2.5.</span> <span class="toc-text">（五）零线</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E6%A0%87%E5%87%86%E5%85%AC%E5%B7%AE%E4%B8%8E%E5%9F%BA%E6%9C%AC%E5%81%8F%E5%B7%AE"><span class="toc-number">1.3.</span> <span class="toc-text">三、标准公差与基本偏差</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%A0%87%E5%87%86%E5%85%AC%E5%B7%AE%E7%AD%89%E7%BA%A7"><span class="toc-number">1.3.1.</span> <span class="toc-text">（一）标准公差等级</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%9F%BA%E6%9C%AC%E5%81%8F%E5%B7%AE"><span class="toc-number">1.3.2.</span> <span class="toc-text">（二）基本偏差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%85%AC%E5%B7%AE%E5%B8%A6"><span class="toc-number">1.3.3.</span> <span class="toc-text">（三）公差带</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%85%8D%E5%90%88"><span class="toc-number">1.4.</span> <span class="toc-text">四、配合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E9%85%8D%E5%90%88%E7%9A%84%E5%AE%9A%E4%B9%89%E4%B8%8E%E5%88%86%E7%B1%BB"><span class="toc-number">1.4.1.</span> <span class="toc-text">（一）配合的定义与分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E9%85%8D%E5%90%88%E5%85%AC%E5%B7%AE"><span class="toc-number">1.4.2.</span> <span class="toc-text">（二）配合公差</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%9F%BA%E5%87%86%E5%88%B6"><span class="toc-number">1.4.3.</span> <span class="toc-text">（三）基准制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E4%BB%80%E4%B9%88%E6%98%AF%E5%9F%BA%E5%87%86%E5%88%B6"><span class="toc-number">1.4.4.</span> <span class="toc-text">3.1 什么是基准制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E5%9F%BA%E5%AD%94%E5%88%B6"><span class="toc-number">1.4.5.</span> <span class="toc-text">3.2 基孔制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E5%9F%BA%E8%BD%B4%E5%88%B6"><span class="toc-number">1.4.6.</span> <span class="toc-text">3.3 基轴制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E5%9F%BA%E5%AD%94%E5%88%B6%E4%B8%8E%E5%9F%BA%E8%BD%B4%E5%88%B6%E7%9A%84%E6%A0%B8%E5%BF%83%E5%8C%BA%E5%88%AB"><span class="toc-number">1.4.7.</span> <span class="toc-text">3.4 基孔制与基轴制的核心区别</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%98%E5%85%88%E9%80%89%E7%94%A8%E5%9F%BA%E5%AD%94%E5%88%B6"><span class="toc-number">1.4.8.</span> <span class="toc-text">3.5 为什么优先选用基孔制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-%E4%BD%95%E6%97%B6%E9%80%89%E7%94%A8%E5%9F%BA%E8%BD%B4%E5%88%B6"><span class="toc-number">1.4.9.</span> <span class="toc-text">3.6 何时选用基轴制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88%E5%9C%A8%E5%9B%BE%E6%A0%B7%E4%B8%8A%E7%9A%84%E6%A0%87%E6%B3%A8"><span class="toc-number">1.4.10.</span> <span class="toc-text">3.7 公差与配合在图样上的标注</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E9%85%8D%E5%90%88%E5%85%AC%E5%B7%AE%E5%B8%A6%E5%9B%BE"><span class="toc-number">1.4.11.</span> <span class="toc-text">（四）配合公差带图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E6%9E%81%E9%99%90%E9%97%B4%E9%9A%99%E4%B8%8E%E6%9E%81%E9%99%90%E8%BF%87%E7%9B%88%E7%9A%84%E8%AE%A1%E7%AE%97"><span class="toc-number">1.4.12.</span> <span class="toc-text">（五）极限间隙与极限过盈的计算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E5%87%A0%E4%BD%95%E5%85%AC%E5%B7%AE%EF%BC%88%E5%BD%A2%E4%BD%8D%E5%85%AC%E5%B7%AE%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">五、几何公差（形位公差）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.5.1.</span> <span class="toc-text">（一）基本概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%85%AC%E5%B7%AE%E9%A1%B9%E7%9B%AE%E5%88%86%E7%B1%BB"><span class="toc-number">1.5.2.</span> <span class="toc-text">（二）公差项目分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%85%AC%E5%B7%AE%E6%A1%86%E6%A0%BC%E6%A0%87%E6%B3%A8"><span class="toc-number">1.5.3.</span> <span class="toc-text">（三）公差框格标注</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%9B%9B%EF%BC%89%E5%9F%BA%E5%87%86%E4%B8%8E%E5%85%AC%E5%B7%AE%E5%B8%A6"><span class="toc-number">1.5.4.</span> <span class="toc-text">（四）基准与公差带</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%94%EF%BC%89%E5%85%AC%E5%B7%AE%E5%8E%9F%E5%88%99"><span class="toc-number">1.5.5.</span> <span class="toc-text">（五）公差原则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E5%85%AD%EF%BC%89%E5%87%A0%E4%BD%95%E5%85%AC%E5%B7%AE%E9%A1%B9%E7%9B%AE%E4%B9%8B%E9%97%B4%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.5.6.</span> <span class="toc-text">（六）几何公差项目之间的关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E8%A1%A8%E9%9D%A2%E7%B2%97%E7%B3%99%E5%BA%A6"><span class="toc-number">1.6.</span> <span class="toc-text">六、表面粗糙度</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E6%A6%82%E5%BF%B5%E4%B8%8E%E8%AF%84%E5%AE%9A%E5%8F%82%E6%95%B0"><span class="toc-number">1.6.1.</span> <span class="toc-text">（一）概念与评定参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1-%E4%BB%80%E4%B9%88%E6%98%AF%E8%A1%A8%E9%9D%A2%E7%B2%97%E7%B3%99%E5%BA%A6"><span class="toc-number">1.6.2.</span> <span class="toc-text">1.1 什么是表面粗糙度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-%E4%B8%BB%E8%A6%81%E8%AF%84%E5%AE%9A%E5%8F%82%E6%95%B0"><span class="toc-number">1.6.3.</span> <span class="toc-text">1.2 主要评定参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3-%E8%A1%A8%E9%9D%A2%E7%B2%97%E7%B3%99%E5%BA%A6%E7%AC%A6%E5%8F%B7%E4%B8%8E%E6%A0%87%E6%B3%A8"><span class="toc-number">1.6.4.</span> <span class="toc-text">1.3 表面粗糙度符号与标注</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4-%E5%B8%B8%E7%94%A8Ra%E6%95%B0%E5%80%BC%E7%9A%84%E5%90%AB%E4%B9%89%E4%B8%8E%E9%80%89%E7%94%A8"><span class="toc-number">1.6.5.</span> <span class="toc-text">1.4 常用Ra数值的含义与选用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5-%E8%A1%A8%E9%9D%A2%E7%B2%97%E7%B3%99%E5%BA%A6%E4%B8%8E%E5%85%AC%E5%B7%AE%E7%AD%89%E7%BA%A7%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB"><span class="toc-number">1.6.6.</span> <span class="toc-text">1.5 表面粗糙度与公差等级的对应关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A1%A8%E9%9D%A2%E7%B2%97%E7%B3%99%E5%BA%A6%E4%B8%8E%E5%85%AC%E5%B7%AE%E7%AD%89%E7%BA%A7%E7%9A%84%E5%AF%B9%E5%BA%94%E5%85%B3%E7%B3%BB"><span class="toc-number">1.6.7.</span> <span class="toc-text">（二）表面粗糙度与公差等级的对应关系</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E8%A1%A8%E9%9D%A2%E7%B2%97%E7%B3%99%E5%BA%A6%E4%B8%8E%E5%BD%A2%E7%8A%B6%E5%85%AC%E5%B7%AE%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.6.8.</span> <span class="toc-text">（三）表面粗糙度与形状公差的关系</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E5%B0%BA%E5%AF%B8%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88%E7%9A%84%E6%A0%87%E6%B3%A8"><span class="toc-number">1.7.</span> <span class="toc-text">七、尺寸公差与配合的标注</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E9%9B%B6%E4%BB%B6%E5%9B%BE%E4%B8%8A%E7%9A%84%E5%85%AC%E5%B7%AE%E6%B3%A8%E6%B3%95"><span class="toc-number">1.7.1.</span> <span class="toc-text">（一）零件图上的公差注法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E8%A3%85%E9%85%8D%E5%9B%BE%E4%B8%8A%E7%9A%84%E9%85%8D%E5%90%88%E6%B3%A8%E6%B3%95"><span class="toc-number">1.7.2.</span> <span class="toc-text">（二）装配图上的配合注法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E6%B3%A8%E5%85%AC%E5%B7%AE%E5%B0%BA%E5%AF%B8%E7%9A%84%E8%A1%A8%E7%A4%BA"><span class="toc-number">1.7.3.</span> <span class="toc-text">（三）注公差尺寸的表示</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E6%A3%80%E9%AA%8C%E4%B8%8E%E6%B5%8B%E9%87%8F"><span class="toc-number">1.8.</span> <span class="toc-text">八、检验与测量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%85%89%E6%BB%91%E6%9E%81%E9%99%90%E9%87%8F%E8%A7%84"><span class="toc-number">1.8.1.</span> <span class="toc-text">（一）光滑极限量规</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%B8%B8%E7%94%A8%E8%AE%A1%E9%87%8F%E5%99%A8%E5%85%B7"><span class="toc-number">1.8.2.</span> <span class="toc-text">（二）常用计量器具</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E6%B5%8B%E9%87%8F%E6%93%8D%E4%BD%9C%E8%A6%81%E7%82%B9"><span class="toc-number">1.8.3.</span> <span class="toc-text">（三）测量操作要点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%9D%E3%80%81%E6%9C%AA%E6%B3%A8%E5%85%AC%E5%B7%AE%EF%BC%88%E4%B8%80%E8%88%AC%E5%85%AC%E5%B7%AE%EF%BC%89"><span class="toc-number">1.9.</span> <span class="toc-text">九、未注公差（一般公差）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E3%80%81%E5%B8%B8%E7%94%A8%E4%BC%98%E5%85%88%E9%85%8D%E5%90%88"><span class="toc-number">1.10.</span> <span class="toc-text">十、常用优先配合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E5%9F%BA%E5%AD%94%E5%88%B6%E4%BC%98%E5%85%88%E9%85%8D%E5%90%88"><span class="toc-number">1.10.1.</span> <span class="toc-text">（一）基孔制优先配合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%9F%BA%E8%BD%B4%E5%88%B6%E4%BC%98%E5%85%88%E9%85%8D%E5%90%88"><span class="toc-number">1.10.2.</span> <span class="toc-text">（二）基轴制优先配合</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E4%B8%80%E3%80%81%E5%85%AC%E5%B7%AE%E7%AD%89%E7%BA%A7%E4%B8%8E%E5%8A%A0%E5%B7%A5%E6%96%B9%E6%B3%95%E7%9A%84%E5%85%B3%E7%B3%BB"><span class="toc-number">1.11.</span> <span class="toc-text">十一、公差等级与加工方法的关系</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/" title="机加工"><img src="/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="机加工"/></a><div class="content"><a class="title" href="/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/" title="机加工">机加工</a><time datetime="2026-09-23T13:49:59.000Z" title="发表于 2026-09-23 21:49:59">2026-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/" title="机械 - 公差与配合"><img src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="机械 - 公差与配合"/></a><div class="content"><a class="title" href="/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/" title="机械 - 公差与配合">机械 - 公差与配合</a><time datetime="2026-09-23T13:38:10.000Z" title="发表于 2026-09-23 21:38:10">2026-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E8%87%AA%E7%94%B1%E5%BA%A6/" title="自由度"><img src="/img/%E5%87%8C%E4%B9%B1%E9%BB%91%E5%8F%91-%E5%A3%81%E7%BA%B8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="自由度"/></a><div class="content"><a class="title" href="/2026/09/23/%E8%87%AA%E7%94%B1%E5%BA%A6/" title="自由度">自由度</a><time datetime="2026-09-23T13:30:28.000Z" title="发表于 2026-09-23 21:30:28">2026-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E5%8A%9B%E3%80%81%E5%8A%9B%E7%9F%A9%E3%80%81%E5%BA%94%E5%8A%9B%E4%B8%8E%E6%9D%90%E6%96%99%E6%80%A7%E8%83%BD/" title="力、力矩、应力与材料性能"><img src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="力、力矩、应力与材料性能"/></a><div class="content"><a class="title" href="/2026/09/23/%E5%8A%9B%E3%80%81%E5%8A%9B%E7%9F%A9%E3%80%81%E5%BA%94%E5%8A%9B%E4%B8%8E%E6%9D%90%E6%96%99%E6%80%A7%E8%83%BD/" title="力、力矩、应力与材料性能">力、力矩、应力与材料性能</a><time datetime="2026-09-23T13:24:03.000Z" title="发表于 2026-09-23 21:24:03">2026-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/20/%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%A0%E5%8A%A8%E6%96%B9%E5%BC%8F/" title="常见的传动方式"><img src="/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常见的传动方式"/></a><div class="content"><a class="title" href="/2026/09/20/%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%A0%E5%8A%A8%E6%96%B9%E5%BC%8F/" title="常见的传动方式">常见的传动方式</a><time datetime="2026-09-20T13:25:06.000Z" title="发表于 2026-09-20 21:25:06">2026-09-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/%5Cimg%5C%E9%BB%84%E5%8F%91%E5%8A%A8%E6%BC%AB%E7%BE%8E%E5%A5%B3.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 不是小阳</span></div><div class="footer_custom_text">这只是一个起点,但非终点,加油。jsut do it !</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"></div><script src="//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

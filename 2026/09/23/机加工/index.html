@@ -1,0 +1,762 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>机加工 | 不是小阳の小破站</title><meta name="author" content="不是小阳"><meta name="copyright" content="不是小阳"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="机加工工艺：减材、增材、焊接与数控化加工 说明：机加工种类繁多，无法绝对穷尽。以下按“减材加工 &#x2F; 增材加工”两大体系梳理主流与重要工艺，将CNC机床、加工中心作为减材加工的数控化升级形态展开，并将焊接增材（定向能量沉积类）作为增材加工的核心子类纳入。   机加工对于机械设计来讲，了解即可，在设计零件的过程中需要考虑一个零件的经济性能和互换性原理，考虑零件加工的种类方法，以及加工的一个难">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机加工">
+<meta property="og:url" content="http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/index.html">
+<meta property="og:site_name" content="不是小阳の小破站">
+<meta property="og:description" content="机加工工艺：减材、增材、焊接与数控化加工 说明：机加工种类繁多，无法绝对穷尽。以下按“减材加工 &#x2F; 增材加工”两大体系梳理主流与重要工艺，将CNC机床、加工中心作为减材加工的数控化升级形态展开，并将焊接增材（定向能量沉积类）作为增材加工的核心子类纳入。   机加工对于机械设计来讲，了解即可，在设计零件的过程中需要考虑一个零件的经济性能和互换性原理，考虑零件加工的种类方法，以及加工的一个难">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://bushixiaoyang.online/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png">
+<meta property="article:published_time" content="2026-09-23T13:49:59.000Z">
+<meta property="article:modified_time" content="2026-09-23T14:13:45.479Z">
+<meta property="article:author" content="不是小阳">
+<meta property="article:tag" content="机械制造">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://bushixiaoyang.online/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "机加工",
+  "url": "http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/",
+  "image": "http://bushixiaoyang.online/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png",
+  "datePublished": "2026-09-23T13:49:59.000Z",
+  "dateModified": "2026-09-23T14:13:45.479Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "不是小阳",
+      "url": "https://bushixiaoyang.online"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 不是小阳","link":"链接: ","source":"来源: 不是小阳の小破站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '机加工',
+  isHighlightShrink: undefined,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background-image: url(/img/%E6%99%9A%E9%9C%9E%E6%B5%B7%E6%BB%A9.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E4%BA%8E%E6%96%87%E4%BA%AE.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tucao/"><i class="fa-fw fas fa-comment-dots"></i><span> 吐槽</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/%5Cimg%5C%E4%BA%8C%E6%AC%A1%E5%85%83-%E5%90%8D%E4%BE%A6%E6%8E%A2%E6%9F%AF%E5%8D%97.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">不是小阳の小破站</span></a><a class="nav-page-title" href="/"><span class="site-name">机加工</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tucao/"><i class="fa-fw fas fa-comment-dots"></i><span> 吐槽</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">机加工</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-09-23T13:49:59.000Z" title="发表于 2026-09-23 21:49:59">2026-09-23</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-09-23T14:13:45.479Z" title="更新于 2026-09-23 22:13:45">2026-09-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%9C%BA%E5%8A%A0%E5%B7%A5/">机加工</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="机加工工艺：减材、增材、焊接与数控化加工"><a href="#机加工工艺：减材、增材、焊接与数控化加工" class="headerlink" title="机加工工艺：减材、增材、焊接与数控化加工"></a>机加工工艺：减材、增材、焊接与数控化加工</h1><blockquote>
+<p><strong>说明</strong>：机加工种类繁多，无法绝对穷尽。以下按“减材加工 &#x2F; 增材加工”两大体系梳理主流与重要工艺，将CNC机床、加工中心作为减材加工的数控化升级形态展开，并将焊接增材（定向能量沉积类）作为增材加工的核心子类纳入。</p>
+</blockquote>
+<blockquote>
+<p>机加工对于机械设计来讲，了解即可，在设计零件的过程中需要考虑一个零件的经济性能和互换性原理，考虑零件加工的种类方法，以及加工的一个难度，这样才能不至于设计出一些花里胡哨不实用的零件。</p>
+</blockquote>
+<h2 id="一、总览框架"><a href="#一、总览框架" class="headerlink" title="一、总览框架"></a>一、总览框架</h2><table>
+<thead>
+<tr>
+<th>大类</th>
+<th>子类</th>
+<th>典型工艺</th>
+<th>经济性定位</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>减材加工</strong></td>
+<td>传统切削</td>
+<td>车削、铣削、钻削、镗削、磨削、刨削、插削、拉削、锯削、攻丝、铰孔、珩磨、研磨、齿轮加工</td>
+<td>车削对回转体最经济；磨削最贵但精度最高；拉削适合大批量</td>
+</tr>
+<tr>
+<td></td>
+<td>特种加工</td>
+<td>电火花、线切割、激光、等离子、水切割、超声波、化学&#x2F;电化学、电子束、离子束</td>
+<td>适合难切削材料、复杂形状；线切割在特定场景比传统加工更经济</td>
+</tr>
+<tr>
+<td></td>
+<td>数控化与加工中心</td>
+<td>数控车床、数控铣床、加工中心、车削中心、五轴联动、数控磨床</td>
+<td>适合多品种小批量、复杂高精度零件；五轴设备投入高但综合效率优势明显</td>
+</tr>
+<tr>
+<td><strong>增材加工</strong></td>
+<td>塑料类</td>
+<td>FDM、SLA&#x2F;DLP、SLS、MJF、PolyJet、金属粘结剂喷射</td>
+<td>FDM最经济；SLA精度高；SLS适合复杂尼龙件小批量</td>
+</tr>
+<tr>
+<td></td>
+<td>金属粉末床类</td>
+<td>SLM、EBM、DMLS</td>
+<td>成本通常高于传统减材，适合传统工艺无法实现的复杂结构</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>焊接增材（DED类）</strong></td>
+<td>电弧增材WAAM（GMAW&#x2F;GTAW&#x2F;PAW&#x2F;CMT）、高能束增材（LBW&#x2F;EBW）</td>
+<td>电弧增材成本低效率高，适合大型构件；高能束增材精度高，适合高价值复杂件</td>
+</tr>
+</tbody></table>
+<p>CNC和加工中心不是独立于减材&#x2F;增材的“第三类”，而是<strong>减材加工在控制方式和自动化程度上的升级形态</strong>；焊接增材则是<strong>增材加工中定向能量沉积（DED）的核心实现方式</strong>。</p>
+<h2 id="二、减材加工：从毛坯到成品的去除艺术"><a href="#二、减材加工：从毛坯到成品的去除艺术" class="headerlink" title="二、减材加工：从毛坯到成品的去除艺术"></a>二、减材加工：从毛坯到成品的去除艺术</h2><p>减材加工利用刀具或能量去除多余材料，获得所需形状和精度。</p>
+<h3 id="（一）传统切削加工"><a href="#（一）传统切削加工" class="headerlink" title="（一）传统切削加工"></a>（一）传统切削加工</h3><h4 id="1-车削"><a href="#1-车削" class="headerlink" title="1. 车削"></a>1. 车削</h4><ul>
+<li><strong>原理与特点</strong>：工件旋转，单刃刀具作直线进给，主要用于加工回转体表面，如内外圆柱面、端面、螺纹、锥面、成形面、切槽、滚花等。加工精度可达IT7<del>IT8，表面粗糙度Ra0.8</del>1.6 μm，精车可达更高水平。</li>
+<li><strong>设备形态</strong>：普通车床、数控车床、车削中心。车削中心可集成铣削、钻孔能力。</li>
+<li><strong>适用材料</strong>：碳钢、合金钢、不锈钢、铝合金、黄铜、钛合金、高温合金、工程塑料等。</li>
+<li><strong>经济性</strong>：对回转体零件，车削通常是最经济高效的加工方式。数控车床单位时间使用成本约100元&#x2F;小时，车刀使用成本约10~15元&#x2F;小时。小批量时设置成本分摊高，大批量时单件成本急剧下降。</li>
+</ul>
+<h4 id="2-铣削"><a href="#2-铣削" class="headerlink" title="2. 铣削"></a>2. 铣削</h4><ul>
+<li><strong>原理与特点</strong>：工件固定，多刃旋转刀具进行切削。适合加工平面、台阶、沟槽、复杂曲面、齿轮、模具型腔等非回转体特征。通过多轴联动可加工极复杂形状。</li>
+<li><strong>类型</strong>：平面铣、端铣、周铣、槽铣、成形铣、数控铣、加工中心铣削。</li>
+<li><strong>适用材料</strong>：钢、铝、钛、不锈钢、铸铁、塑料等。高速铣削可加工硬度达60 HRC的淬硬钢。</li>
+<li><strong>经济性</strong>：对复杂几何体高效，但装夹次数多。数控铣床单位时间使用成本约100元&#x2F;小时，铣刀使用成本约10~15元&#x2F;小时。加工中心因自动换刀可显著减少装夹次数，综合成本更优。</li>
+</ul>
+<h4 id="3-钻削与孔加工"><a href="#3-钻削与孔加工" class="headerlink" title="3. 钻削与孔加工"></a>3. 钻削与孔加工</h4><ul>
+<li><strong>原理与特点</strong>：使用钻头在实体材料上加工孔。包括钻孔、扩孔、铰孔、锪孔、攻丝等。是孔加工的基础方法，精度一般，但可通过铰孔、镗孔提高。</li>
+<li><strong>适用材料</strong>：铸铁、钢、不锈钢、铝合金、钛合金、铜、塑料、碳纤维复合材料等。</li>
+<li><strong>经济性</strong>：基础孔加工成本较低。若与加工中心集成，可在一次装夹中完成钻孔、扩孔、铰孔、攻丝，避免重复定位，降低综合成本。</li>
+</ul>
+<h4 id="4-镗削"><a href="#4-镗削" class="headerlink" title="4. 镗削"></a>4. 镗削</h4><ul>
+<li><strong>原理与特点</strong>：用单刃镗刀扩大或精加工已有孔，可修正孔的位置精度和同轴度。适合大孔、高精度孔、箱体孔系。</li>
+<li><strong>经济性</strong>：效率低于钻削，但精度高。大孔精加工和孔系位置精度要求高时，镗削是必要工艺。常集成在加工中心上完成。</li>
+</ul>
+<h4 id="5-磨削"><a href="#5-磨削" class="headerlink" title="5. 磨削"></a>5. 磨削</h4><ul>
+<li><strong>原理与特点</strong>：高速旋转砂轮作为“刀具”进行微量切削。是精密加工和超精密加工的主要方法，精度可达IT6~IT5甚至更高，表面粗糙度极低。</li>
+<li><strong>类型</strong>：外圆磨、内圆磨、平面磨、无心磨、成形磨、珩磨、研磨、超精加工。</li>
+<li><strong>适用材料</strong>：几乎不受材料硬度限制，可加工淬硬钢、高速钢、硬质合金、陶瓷、玻璃、石材等。</li>
+<li><strong>经济性</strong>：高精度、低粗糙度，但速度慢、成本高。数控磨床单位时间使用成本约60元&#x2F;小时，磨刀约8元&#x2F;小时。适合精加工，不适合大批量去除材料。</li>
+</ul>
+<h4 id="6-刨削与插削"><a href="#6-刨削与插削" class="headerlink" title="6. 刨削与插削"></a>6. 刨削与插削</h4><ul>
+<li><strong>原理与特点</strong>：刀具或工件作直线往复运动，加工平面、沟槽。插削类似，主要用于内孔键槽、方孔等。</li>
+<li><strong>经济性</strong>：效率较低，常用于单件小批生产，已逐步被铣削、拉削替代。一个键槽用插床加工约100元，用线切割仅约30元且精度更高。</li>
+</ul>
+<h4 id="7-拉削"><a href="#7-拉削" class="headerlink" title="7. 拉削"></a>7. 拉削</h4><ul>
+<li><strong>原理与特点</strong>：使用多齿拉刀进行直线运动，一次行程完成粗、精加工。效率极高，精度好。</li>
+<li><strong>适用</strong>：孔、键槽、平面、花键、涡轮盘榫槽等。</li>
+<li><strong>经济性</strong>：刀具专用性强、成本高，适用于大批量生产。批量越大，单件成本越低。</li>
+</ul>
+<h4 id="8-锯削与切断"><a href="#8-锯削与切断" class="headerlink" title="8. 锯削与切断"></a>8. 锯削与切断</h4><ul>
+<li><strong>原理与特点</strong>：用锯片、带锯或圆锯切断材料，常用于下料。</li>
+<li><strong>经济性</strong>：成本低，是毛坯准备的基础工序。</li>
+</ul>
+<h4 id="9-齿轮加工与螺纹加工"><a href="#9-齿轮加工与螺纹加工" class="headerlink" title="9. 齿轮加工与螺纹加工"></a>9. 齿轮加工与螺纹加工</h4><ul>
+<li><strong>齿轮加工</strong>：滚齿、插齿、剃齿、磨齿等，用于圆柱齿轮、锥齿轮、蜗轮蜗杆。</li>
+<li><strong>螺纹加工</strong>：车螺纹、铣螺纹、攻丝、套丝、磨螺纹、滚压螺纹。</li>
+<li><strong>经济性</strong>：滚齿、插齿适合大批量；磨齿用于高精度齿轮；滚压螺纹可提高强度且材料利用率高。</li>
+</ul>
+<h3 id="（二）特种加工"><a href="#（二）特种加工" class="headerlink" title="（二）特种加工"></a>（二）特种加工</h3><p>特种加工利用电、热、化学等能量去除材料，适合传统切削难以进行的场景。</p>
+<table>
+<thead>
+<tr>
+<th>工艺</th>
+<th>原理与特点</th>
+<th>适用材料&#x2F;零件</th>
+<th>经济性参考</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>电火花成形EDM</strong></td>
+<td>工具电极与工件间脉冲放电，局部高温蚀除材料，非接触、无宏观切削力</td>
+<td>导电材料，淬火钢、硬质合金、钛合金；深腔、窄槽、复杂模具型腔</td>
+<td>单件成本约400~800元（100×100×50mm方块），电极制备增加成本</td>
+</tr>
+<tr>
+<td><strong>线切割WEDM</strong></td>
+<td>移动细金属丝作电极，沿轨迹切割，可加工导电&#x2F;半导体材料</td>
+<td>淬火钢模具、硬质合金冲模、复杂细小零件、窄缝</td>
+<td>单件成本约300<del>600元，精度IT5</del>IT7；特定场景比插床更经济</td>
+</tr>
+<tr>
+<td><strong>激光加工</strong></td>
+<td>高能激光束切割、打孔、焊接、打标</td>
+<td>金属、非金属、薄板</td>
+<td>板材切割费约30<del>100元，速度快，精度IT10</del>IT12</td>
+</tr>
+<tr>
+<td><strong>等离子弧加工</strong></td>
+<td>等离子弧切割较厚导电金属</td>
+<td>碳钢、不锈钢、铝</td>
+<td>厚板切割经济，热影响区较大</td>
+</tr>
+<tr>
+<td><strong>水切割</strong></td>
+<td>高压水或加磨料切割，无热影响区</td>
+<td>几乎任何材料，含石材、玻璃、复合材料</td>
+<td>单件成本约50~150元，速度较慢</td>
+</tr>
+<tr>
+<td><strong>超声波加工</strong></td>
+<td>超声振动带动磨料加工硬脆材料</td>
+<td>玻璃、陶瓷、宝石、硬质合金</td>
+<td>适合小孔、型腔，效率较低</td>
+</tr>
+<tr>
+<td><strong>化学&#x2F;电化学加工</strong></td>
+<td>化学溶解或电化学阳极溶解去除材料</td>
+<td>复杂表面、异形孔、叶片</td>
+<td>无切削应力，模具成本高，适合大批量</td>
+</tr>
+<tr>
+<td><strong>电子束&#x2F;离子束</strong></td>
+<td>高能束流微细加工</td>
+<td>微孔、精密零件</td>
+<td>设备昂贵，适合特殊高精需求</td>
+</tr>
+</tbody></table>
+<h3 id="（三）数控化与加工中心"><a href="#（三）数控化与加工中心" class="headerlink" title="（三）数控化与加工中心"></a>（三）数控化与加工中心</h3><p>CNC机床是采用计算机数字控制的机床总称。它不是独立加工原理，而是控制方式升级。加工中心的核心标志是<strong>刀库 + 自动换刀装置（ATC）</strong> ，实现一次装夹、多工序连续加工。</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>结构特点</th>
+<th>最佳适用对象</th>
+<th>经济性特征</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>数控车床</strong></td>
+<td>工件旋转，单刃刀具进给，2轴控制，无刀库</td>
+<td>回转体零件</td>
+<td>对回转体最经济，单位时间成本约100元&#x2F;小时</td>
+</tr>
+<tr>
+<td><strong>数控铣床</strong></td>
+<td>刀具旋转，工件固定，无ATC</td>
+<td>平面、曲面、沟槽</td>
+<td>复杂几何高效，换刀需人工</td>
+</tr>
+<tr>
+<td><strong>立式加工中心</strong></td>
+<td>主轴垂直，结构简单，装夹方便</td>
+<td>盘类、板类、单面加工工件</td>
+<td>性价比最高的入门选择</td>
+</tr>
+<tr>
+<td><strong>卧式加工中心</strong></td>
+<td>主轴水平，可加工多面，排屑顺畅</td>
+<td>箱体类、孔系位置精度高的工件</td>
+<td>价格显著高于立式</td>
+</tr>
+<tr>
+<td><strong>龙门加工中心</strong></td>
+<td>龙门框架，刚性和稳定性极高</td>
+<td>大型&#x2F;重型工件，机床床身、航空航天结构件</td>
+<td>设备投资大，适合大型零件</td>
+</tr>
+<tr>
+<td><strong>五轴联动加工中心</strong></td>
+<td>五轴联动，减少装夹次数</td>
+<td>叶轮、导风轮、复杂曲面、高精度多面零件</td>
+<td>采购投入是普通三轴3<del>5倍，工时单价约200</del>500元&#x2F;小时</td>
+</tr>
+<tr>
+<td><strong>车削中心&#x2F;复合加工机</strong></td>
+<td>车削+铣削+钻孔一体化</td>
+<td>多工序复合加工的回转体零件</td>
+<td>减少设备转换和装夹，适合多品种小批量</td>
+</tr>
+</tbody></table>
+<p><strong>加工中心经济性核心数据</strong>：</p>
+<ul>
+<li>五轴采购投入是普通三轴设备的3~5倍。以工业无人机承重构件（H65黄铜，深腔35mm、壁厚1.2mm，公差±0.008mm，批量500件）为例，采用五轴联动一次装夹完成加工，单件成本相比传统多工序加工降低22%。</li>
+<li>五轴工时单价约200~500元&#x2F;小时。</li>
+<li>材料成本乘数：铝1.0x，碳钢约1.3x，不锈钢1.6<del>2.0x，钛合金3.0</del>4.0x以上。</li>
+<li>公差成本乘数：±0.76mm为1.0x；±0.025mm约3.5x；±0.0025mm可达10~24x。</li>
+<li>加工中心适合多品种、小批量，通过成组技术可接近大批量生产的效率和效益。</li>
+<li>中国CNC加工车间小时费率约15<del>75美元&#x2F;小时，其中设备折旧占35</del>45%，人工与编程占15<del>25%，刀具与冷却液占8</del>12%，能源与工厂管理占15~20%。</li>
+</ul>
+<h2 id="三、增材加工：逐层累积的制造方式"><a href="#三、增材加工：逐层累积的制造方式" class="headerlink" title="三、增材加工：逐层累积的制造方式"></a>三、增材加工：逐层累积的制造方式</h2><p>增材加工基于三维CAD模型，通过材料逐层累加制造实体零件。在金属增材领域，<strong>焊接是“定向能量沉积（DED）”的核心实现方式</strong>。</p>
+<h3 id="（一）焊接增材制造（定向能量沉积类）"><a href="#（一）焊接增材制造（定向能量沉积类）" class="headerlink" title="（一）焊接增材制造（定向能量沉积类）"></a>（一）焊接增材制造（定向能量沉积类）</h3><p>焊接增材按热源分为两大类：<strong>电弧增材</strong>和<strong>高能束增材</strong>。</p>
+<h4 id="电弧增材制造（WAAM）"><a href="#电弧增材制造（WAAM）" class="headerlink" title="电弧增材制造（WAAM）"></a>电弧增材制造（WAAM）</h4><p>以电弧为热源，焊丝为原料，逐层堆积成形。常见工艺包括熔化极气体保护焊（GMAW&#x2F;MIG）、钨极气体保护焊（GTAW&#x2F;TIG）、等离子弧焊（PAW）和冷金属过渡（CMT）。</p>
+<ul>
+<li><strong>特点</strong>：制造成本低，生产效率高，制造形式灵活，零件致密性好；但工件表面质量差，尺寸精度不高，残余应力大，热变形大。</li>
+<li><strong>适用材料</strong>：铝合金、镁合金、钛合金、不锈钢、镍基合金、镍铝青铜等。研究表明WAAM可成功沉积ER70S-6、304、316L、AA5083、AA6082、Inconel 625&#x2F;718、Ti-6Al-4V等多种材料，沉积速率可达150 g&#x2F;min。</li>
+<li><strong>应用</strong>：大型航空航天结构件、船舶螺旋桨、模具修复、船舶与海洋工程大型构件。典型案例包括香港首个WAAM建造的金属展亭“Weaving Love”、RAMLAB等合作制造直径1.3米、重180公斤的镍铝青铜船用螺旋桨，验证了WAAM在大尺度海洋构件制造中的成本和交期优势。</li>
+<li><strong>经济性</strong>：设备投入远低于激光&#x2F;电子束粉末床设备，丝材成本也低于金属粉末。WAAM的材料浪费相比减材制造可减少高达90%。以商用车铝合金轻量化横梁为例，相较于传统铸造工艺，WAAM的单件试制成本可降低59.5%，制件效率提升51.7%。</li>
+</ul>
+<h4 id="高能束增材制造"><a href="#高能束增材制造" class="headerlink" title="高能束增材制造"></a>高能束增材制造</h4><p>以激光束（LBW）或电子束（EBW）为热源，进行金属丝材或粉末的逐层熔敷。</p>
+<ul>
+<li><strong>特点</strong>：能量密度高，熔深大，热影响区窄，精度高于电弧增材；但设备昂贵，沉积效率低于电弧增材。</li>
+<li><strong>适用材料</strong>：钛合金、镍基高温合金、不锈钢、铝合金等。</li>
+<li><strong>应用</strong>：航空航天复杂承力构件、发动机叶片修复、医疗植入物。</li>
+<li><strong>经济性</strong>：设备投入高，但<strong>材料利用率极高</strong>，适合<strong>高价值材料</strong>和<strong>复杂结构</strong>的制造与修复。DED工艺可将Inconel 625的材料浪费和加工时间大幅降低，且支持多材料能力，在修复和增材现有构件方面具有独特优势。</li>
+</ul>
+<h3 id="（二）粉末床增材制造"><a href="#（二）粉末床增材制造" class="headerlink" title="（二）粉末床增材制造"></a>（二）粉末床增材制造</h3><table>
+<thead>
+<tr>
+<th>技术类型</th>
+<th>工作原理</th>
+<th>常用材料</th>
+<th>主要特点</th>
+<th>经济性参考</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>SLM</strong></td>
+<td>激光完全熔化金属粉末</td>
+<td>钛合金、不锈钢、铝合金、钴铬合金</td>
+<td>全致密、高强度；成本高，有热应力</td>
+<td>单件约1000<del>5000元（小件），设备5.5万</del>35万美元级</td>
+</tr>
+<tr>
+<td><strong>EBM</strong></td>
+<td>真空电子束熔化金属粉末</td>
+<td>钛合金、钴铬合金</td>
+<td>真空避免氧化，成形速度快；表面质量一般</td>
+<td>适合活性金属，航空航天、医疗植入物</td>
+</tr>
+<tr>
+<td><strong>DMLS</strong></td>
+<td>激光烧结金属粉末，侧重烧结</td>
+<td>不锈钢、钛合金、铝合金、工具钢</td>
+<td>高强度、高精度</td>
+<td>与SLM类似，面向金属功能件</td>
+</tr>
+<tr>
+<td><strong>金属粘结剂喷射</strong></td>
+<td>粘结剂喷射金属粉末，后烧结</td>
+<td>不锈钢、钛、铜</td>
+<td>批量效率高，收缩需控制</td>
+<td>单次材料处理量可达30kg，适合中小型复杂金属件批量；2026年市场估值约5.8亿美元，有望向数十亿美元量级扩张</td>
+</tr>
+</tbody></table>
+<p><strong>粉末床增材经济性规律</strong>：金属增材成本通常高于传统减材，其经济性主要体现在传统工艺无法实现的复杂结构、轻量化设计或极小批量场景。WAAM-CNC混合路线可使钢材消耗减少约70%，环境影响平均降低49%。</p>
+<h3 id="（三）塑料类增材制造"><a href="#（三）塑料类增材制造" class="headerlink" title="（三）塑料类增材制造"></a>（三）塑料类增材制造</h3><table>
+<thead>
+<tr>
+<th>技术类型</th>
+<th>工作原理</th>
+<th>常用材料</th>
+<th>主要特点</th>
+<th>经济性参考</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>FDM（3D打印）</strong></td>
+<td>热塑性丝材熔化挤出，逐层堆积</td>
+<td>PLA、ABS、PETG、PEEK</td>
+<td>成本低，操作简单；表面有层纹，强度较低</td>
+<td>单件约50~200元，最经济的3D打印方式</td>
+</tr>
+<tr>
+<td><strong>SLA&#x2F;DLP（光固化打印）</strong></td>
+<td>紫外激光或投影固化液态光敏树脂</td>
+<td>光敏树脂</td>
+<td>精度最高（±0.05~0.1mm），表面质量好；需支撑</td>
+<td>单件约200~600元</td>
+</tr>
+<tr>
+<td><strong>SLS</strong></td>
+<td>激光烧结粉末，无需完全熔化</td>
+<td>尼龙、金属粉末、陶瓷粉末</td>
+<td>无需支撑，材料范围广，机械性能好；表面略粗糙</td>
+<td>单件约200~1500元，粉末可重复使用</td>
+</tr>
+<tr>
+<td><strong>MJF</strong></td>
+<td>多射流熔融粉末</td>
+<td>尼龙、TPU</td>
+<td>速度快，适合批量尼龙件</td>
+<td>小批量复杂件有成本优势</td>
+</tr>
+<tr>
+<td><strong>PolyJet</strong></td>
+<td>喷头喷射光敏树脂并固化</td>
+<td>光敏树脂、类橡胶材料</td>
+<td>多材料、多色，精度高</td>
+<td>设备贵，材料贵，适合精密原型</td>
+</tr>
+</tbody></table>
+<p><strong>增材制造经济性规律</strong>：3D打印初始成本几乎为零，小批量有优势；超过几百件后，模具成型成本优势超越3D打印。</p>
+<h2 id="四、传统焊接方法全谱"><a href="#四、传统焊接方法全谱" class="headerlink" title="四、传统焊接方法全谱"></a>四、传统焊接方法全谱</h2><p>以下按焊接的三大类（熔焊、压焊、钎焊）系统梳理。<strong>并非所有焊接方法都常用于增材制造，但它们构成了焊接技术的完整知识体系</strong>。</p>
+<h3 id="（一）熔焊"><a href="#（一）熔焊" class="headerlink" title="（一）熔焊"></a>（一）熔焊</h3><p>将待焊处母材金属熔化，不加压力形成焊缝。</p>
+<p><strong>焊条电弧焊（SMAW &#x2F; 手工电弧焊）</strong></p>
+<ul>
+<li><strong>原理</strong>：焊条与工件间产生电弧，药皮分解形成气体和熔渣保护熔池。</li>
+<li><strong>特点</strong>：设备简单，操作灵活，成本低，适合户外和条件不受控的环境；但效率较低，依赖焊工技能。</li>
+<li><strong>适用材料</strong>：碳钢、低合金钢、不锈钢、镍基合金。</li>
+<li><strong>经济性</strong>：设备投入最低，是<strong>性价比最高的手工焊接方法</strong>。焊工短缺是其主要限制因素。</li>
+</ul>
+<p><strong>熔化极气体保护焊（GMAW &#x2F; MIG&#x2F;MAG）</strong></p>
+<ul>
+<li><strong>原理</strong>：连续送进的实心焊丝作为电极，外部保护气体隔绝大气。</li>
+<li><strong>特点</strong>：半自动，生产效率显著高于SMAW，易学习，易自动化；设备较复杂，室外抗风能力差。</li>
+<li><strong>适用材料</strong>：碳钢、不锈钢、铝合金、镍合金、铜合金。</li>
+<li><strong>经济性</strong>：焊材成本适中，<strong>适合中等批量生产</strong>，在自动化条件下效率优势明显。</li>
+</ul>
+<p><strong>钨极气体保护焊（GTAW &#x2F; TIG）</strong></p>
+<ul>
+<li><strong>原理</strong>：非熔化钨极与工件间产生电弧，可添加填充丝，惰性气体保护。</li>
+<li><strong>特点</strong>：焊缝质量极高，适合薄板和精密焊接；速度慢，成本高。</li>
+<li><strong>适用材料</strong>：不锈钢、铝合金、钛合金、镁合金。</li>
+<li><strong>经济性</strong>：<strong>单位长度成本较高</strong>，耗材和人工成本均高于MIG&#x2F;MAG。</li>
+</ul>
+<p><strong>埋弧焊（SAW）</strong></p>
+<ul>
+<li><strong>原理</strong>：电弧在颗粒状焊剂层下燃烧，焊剂熔化形成熔渣保护。</li>
+<li><strong>特点</strong>：生产率极高（比手工电弧焊提高5~10倍），焊接质量稳定，适合厚板长焊缝；仅适合平焊位置。</li>
+<li><strong>适用材料</strong>：碳钢、低合金钢、不锈钢。</li>
+<li><strong>经济性</strong>：<strong>厚板大批量焊接的最经济选择</strong>，自动埋弧焊设备投入较高但单位成本低。</li>
+</ul>
+<p><strong>等离子弧焊（PAW）</strong></p>
+<ul>
+<li><strong>原理</strong>：压缩电弧产生高能量密度等离子射流，可形成匙孔效应。</li>
+<li><strong>特点</strong>：能量密度高于TIG，熔深大，焊接精度高；设备较贵，运行成本较低。</li>
+<li><strong>经济性</strong>：设备投入高于TIG，但<strong>运行成本较低</strong>，适合自动化焊接。</li>
+</ul>
+<p><strong>气焊（氧乙炔焊）</strong></p>
+<ul>
+<li><strong>原理</strong>：氧气与乙炔混合燃烧产生火焰（约3100℃）熔化母材和填充丝。</li>
+<li><strong>特点</strong>：设备简单、移动方便、无需电源；火焰分散，热影响区宽，变形大。</li>
+<li><strong>适用材料</strong>：薄钢板、铜管、铝管、部分塑料。</li>
+<li><strong>经济性</strong>：<strong>综合造价最低</strong>，但已逐步被电弧焊替代，目前主要用于无电源场合和野外作业。</li>
+</ul>
+<p><strong>电渣焊（ESW）</strong></p>
+<ul>
+<li><strong>原理</strong>：电流通过液态熔渣产生电阻热（约1700℃），熔化焊丝和工件边缘。电流500<del>1000A，沉积速率15</del>25 kg&#x2F;h。</li>
+<li><strong>特点</strong>：单道焊接厚度可达25~300mm，热效率高达80%；热循环缓慢，接头晶粒粗大，焊后通常需正火处理。仅限立焊位置。</li>
+<li><strong>适用材料</strong>：碳钢、低合金钢、不锈钢（厚度≥25mm）。</li>
+<li><strong>经济性</strong>：<strong>特厚板焊接的唯一高效方法</strong>。初始投资较高，但每米成本较低。案例：韩国一造船厂利用ESW焊接50mm厚钢板，将船体组装时间缩短了40%。</li>
+</ul>
+<p><strong>激光焊（LBW）</strong></p>
+<ul>
+<li><strong>原理</strong>：高能激光束熔化金属，可形成深宽比极大的匙孔焊缝。</li>
+<li><strong>特点</strong>：功率密度比电弧焊高2<del>4个数量级，热影响区极窄（0.5</del>2mm），变形小，精度高；对接头间隙极其敏感（通常要求≤0.1~0.3mm）。</li>
+<li><strong>适用材料</strong>：碳钢、不锈钢、铝合金、钛合金、镍合金，可焊接异种材料。</li>
+<li><strong>经济性</strong>：设备投入高（工业光纤激光系统约2.5万~15万美元以上），但<strong>在大批量生产中，省去的矫直和后续加工成本可显著抵消设备投入</strong>。</li>
+</ul>
+<p><strong>电子束焊（EBW）</strong></p>
+<ul>
+<li><strong>原理</strong>：在真空中，高速电子束撞击工件，动能转化为热能熔化金属。</li>
+<li><strong>特点</strong>：功率密度与激光焊相当，焊缝质量一致性和可重复性最好，熔深大；需真空环境，工件尺寸受真空室限制，装配间隙要求极严。</li>
+<li><strong>适用材料</strong>：钛合金、锆合金、铍、高温合金、异种金属。</li>
+<li><strong>经济性</strong>：设备极贵，一套实验室级电子束焊机系统约135万元人民币，大型真空电子束焊接系统中标价可达5280万元。适合<strong>高价值、大批量、高质量要求</strong>的场景，如航空航天和核工业。</li>
+</ul>
+<h3 id="（二）压焊"><a href="#（二）压焊" class="headerlink" title="（二）压焊"></a>（二）压焊</h3><p>焊接过程中对焊件施加压力（加热或不加热）完成焊接。</p>
+<p><strong>电阻焊</strong></p>
+<ul>
+<li><strong>点焊</strong>：工件搭接于两电极间，通电局部熔化形成焊点。用于汽车车身薄板结构。</li>
+<li><strong>缝焊</strong>：用旋转滚盘电极形成连续密封焊缝，用于油箱、气瓶。</li>
+<li><strong>对焊</strong>：两工件端面接触，电阻加热后顶锻形成对接接头，含闪光对焊和电阻对焊，用于棒材、管道、钢轨。</li>
+<li><strong>经济性</strong>：生产率极高，<strong>汽车行业车身焊接的核心工艺</strong>，单点成本极低。</li>
+</ul>
+<p><strong>搅拌摩擦焊（FSW）</strong></p>
+<ul>
+<li><strong>原理</strong>：搅拌头旋转摩擦使材料塑化，在挤压下形成固相焊缝。焊接温度低于熔点，无熔化、无飞溅、无气孔，残余应力低，接头强度可达母材的80%以上。</li>
+<li><strong>特点</strong>：属于固相连接，接头质量高。但工具成本与寿命是制约其在钢和钛合金等硬质合金上广泛应用的主要障碍——高温FSW工具价格昂贵且寿命有限。</li>
+<li><strong>适用材料</strong>：铝合金、镁合金、铜合金，正向钛合金和钢铁推广。</li>
+<li><strong>应用</strong>：轨道列车、汽车、船舶、航空航天铝合金结构。</li>
+<li><strong>经济性</strong>：无需焊丝和保护气体。以储能箱体为例，FSW替代钎焊工艺后，单个箱体采购成本降低30%，焊接效率提升1倍以上，综合成本下降40%，箱体重量从26kg降至22kg，减重15%。</li>
+</ul>
+<p><strong>扩散焊</strong></p>
+<ul>
+<li><strong>原理</strong>：在高温和压力下，通过原子扩散实现连接，通常在真空或保护气氛中进行。</li>
+<li><strong>特点</strong>：可连接异种材料，接头质量高，变形小；效率低，设备昂贵。</li>
+<li><strong>应用</strong>：航空航天钛合金构件、核工业、电子器件封装。</li>
+</ul>
+<p><strong>超声波焊</strong></p>
+<ul>
+<li><strong>原理</strong>：超声振动在压力下使材料界面摩擦生热，实现固相连接。</li>
+<li><strong>特点</strong>：无需外加热源，适合异种材料和薄箔焊接。</li>
+<li><strong>应用</strong>：锂电池极耳、电子线束、塑料焊接。</li>
+</ul>
+<h3 id="（三）钎焊"><a href="#（三）钎焊" class="headerlink" title="（三）钎焊"></a>（三）钎焊</h3><p>采用熔点低于母材的钎料，加热至钎料熔化但母材不熔化，利用液态钎料润湿母材并扩散实现连接。</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>钎料熔点</th>
+<th>接头强度</th>
+<th>典型钎料</th>
+<th>应用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>软钎焊</strong></td>
+<td>&lt;450℃</td>
+<td>&lt;70 MPa</td>
+<td>锡铅合金、锡基钎料</td>
+<td>电子元器件、食品工业气密器件</td>
+</tr>
+<tr>
+<td><strong>硬钎焊</strong></td>
+<td>&gt;450℃</td>
+<td>&gt;200 MPa</td>
+<td>铜基、银基、镍基、铝基钎料</td>
+<td>硬质合金刀具、航空航天构件、精密复杂件</td>
+</tr>
+</tbody></table>
+<ul>
+<li><strong>特点</strong>：接头变形小，表面光洁，可连接异种材料，适合精密复杂构件；但接头强度通常低于熔焊接头，耐温性受钎料限制。</li>
+<li><strong>经济性</strong>：<strong>硬钎焊在精密件和异种材料连接中具有不可替代性</strong>；软钎焊是电子工业的基础连接工艺，成本极低。钎焊广泛应用于制冷暖通、电力电气、轨道交通、电子半导体、新能源汽车、AI液冷等领域。</li>
+</ul>
+<h3 id="焊接方法经济性速查"><a href="#焊接方法经济性速查" class="headerlink" title="焊接方法经济性速查"></a>焊接方法经济性速查</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>相对设备投入</th>
+<th>相对单位成本</th>
+<th>最佳批量场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>焊条电弧焊</td>
+<td>最低</td>
+<td>中</td>
+<td>小批量、维修、户外</td>
+</tr>
+<tr>
+<td>MIG&#x2F;MAG</td>
+<td>低</td>
+<td>中低</td>
+<td>中等批量、自动化</td>
+</tr>
+<tr>
+<td>TIG</td>
+<td>中</td>
+<td>高</td>
+<td>小批量、高质量要求</td>
+</tr>
+<tr>
+<td>埋弧焊</td>
+<td>中高</td>
+<td>低</td>
+<td>厚板大批量</td>
+</tr>
+<tr>
+<td>激光焊</td>
+<td>高</td>
+<td>大批量时低</td>
+<td>大批量、精密件</td>
+</tr>
+<tr>
+<td>电子束焊</td>
+<td>极高</td>
+<td>高（小批量）</td>
+<td>高价值、大批量</td>
+</tr>
+<tr>
+<td>电阻点焊</td>
+<td>中</td>
+<td>极低</td>
+<td>汽车车身大批量</td>
+</tr>
+<tr>
+<td>搅拌摩擦焊</td>
+<td>中高</td>
+<td>中</td>
+<td>铝合金中等批量</td>
+</tr>
+<tr>
+<td>电渣焊</td>
+<td>中高</td>
+<td>低（厚板）</td>
+<td>特厚板焊接</td>
+</tr>
+<tr>
+<td>钎焊</td>
+<td>低~中</td>
+<td>低~中</td>
+<td>精密件、电子</td>
+</tr>
+</tbody></table>
+<h2 id="五、综合选型逻辑"><a href="#五、综合选型逻辑" class="headerlink" title="五、综合选型逻辑"></a>五、综合选型逻辑</h2><table>
+<thead>
+<tr>
+<th>需求场景</th>
+<th>推荐工艺</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>回转体、轴、盘、套、螺纹</td>
+<td>车削、数控车床、车削中心</td>
+</tr>
+<tr>
+<td>平面、沟槽、复杂曲面、模具</td>
+<td>铣削、加工中心、五轴</td>
+</tr>
+<tr>
+<td>高精度孔、孔系</td>
+<td>钻削+铰孔+镗削，加工中心集成</td>
+</tr>
+<tr>
+<td>淬硬钢、硬质合金、复杂型腔</td>
+<td>电火花、线切割</td>
+</tr>
+<tr>
+<td>薄板下料、快速切割</td>
+<td>激光切割、等离子、水切割</td>
+</tr>
+<tr>
+<td>超精密、低粗糙度</td>
+<td>磨削、珩磨、研磨</td>
+</tr>
+<tr>
+<td>大批量键槽、花键、异形孔</td>
+<td>拉削</td>
+</tr>
+<tr>
+<td>复杂塑料原型、小批量</td>
+<td>FDM、SLA、SLS</td>
+</tr>
+<tr>
+<td>复杂金属功能件、轻量化结构</td>
+<td>SLM、EBM、DMLS、金属粘结剂喷射</td>
+</tr>
+<tr>
+<td><strong>大型金属构件快速成形（中等精度）</strong></td>
+<td><strong>电弧增材（WAAM）、GMAW&#x2F;GTAW增材</strong></td>
+</tr>
+<tr>
+<td><strong>高价值金属复杂结构制造&#x2F;修复</strong></td>
+<td><strong>激光增材（LBW）、电子束增材（EBW）</strong></td>
+</tr>
+<tr>
+<td>多品种小批量复杂零件</td>
+<td>加工中心、五轴、车削中心</td>
+</tr>
+<tr>
+<td>大型重型零件</td>
+<td>龙门加工中心、落地镗铣</td>
+</tr>
+<tr>
+<td><strong>铝合金高质量结构焊接</strong></td>
+<td><strong>搅拌摩擦焊（FSW）</strong></td>
+</tr>
+<tr>
+<td><strong>汽车车身薄板大批量焊接</strong></td>
+<td><strong>电阻点焊</strong></td>
+</tr>
+<tr>
+<td><strong>特厚板焊接（&gt;30mm）</strong></td>
+<td><strong>电渣焊、埋弧焊</strong></td>
+</tr>
+<tr>
+<td><strong>精密异种材料连接</strong></td>
+<td><strong>钎焊（硬钎焊）、扩散焊</strong></td>
+</tr>
+<tr>
+<td><strong>电子元器件连接</strong></td>
+<td><strong>软钎焊</strong></td>
+</tr>
+<tr>
+<td><strong>野外无电源环境焊接</strong></td>
+<td><strong>气焊、焊条电弧焊</strong></td>
+</tr>
+</tbody></table>
+<p><strong>总结</strong>：减材加工仍是制造业主流，CNC与加工中心是其自动化、数控化升级；增材加工中，粉末床类适合高精度复杂金属件，焊接增材（DED类）以电弧增材的低成本高效率适合大型构件，以高能束增材的高精度高材料利用率适合高价值复杂件。传统焊接方法中，熔焊应用最广，压焊在汽车和铝合金领域具有独特优势，钎焊服务于精密和异种材料连接。选型时应综合考虑零件形状、材料、批量、精度、成本和交期。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://bushixiaoyang.online">不是小阳</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/">http://bushixiaoyang.online/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://bushixiaoyang.online" target="_blank">不是小阳の小破站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%BA%E6%A2%B0%E5%88%B6%E9%80%A0/">机械制造</a></div><div class="post-share"><div class="social-share" data-image="/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/" title="机械 - 公差与配合"><img class="cover" src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">机械 - 公差与配合</div></div><div class="info-2"><div class="info-item-1">机械制图 - 公差与配合一、互换性与标准化互换性是指在同一规格的一批零部件中，可以不经选择、调整或修配，任取一件装配在机器上，并能达到规定的使用性能要求。按互换性原则组织生产，可合理进行生产分工和专业化协作，便于采用高效专用设备，缩短生产周期、降低成本，便于装配自动化。 公差与配合的国家标准体系主要包括：GB&#x2F;T 1800.1—2020《产品几何技术规范（GPS） 线性尺寸公差ISO代号体系 第1部分：公差、偏差和配合的基础》、GB&#x2F;T 1800.2—2020《第2部分：标准公差等级和孔、轴极限偏差表》、GB&#x2F;T 1801—2009《极限与配合 公差带和配合的选择》、GB&#x2F;T 1803—2003《极限与配合 尺寸至18mm孔、轴公差带》、GB&#x2F;T 1804—2000《一般公差 未注公差的线性和角度尺寸的公差》等。 二、基本术语及定义（一）孔与轴 孔：通常指工件的圆柱形内表面，也包括非圆柱形内表面（由两平行平面或切面形成的包容面），孔径用大写字母D表示。 轴：通常指工件的圆柱形外表面，也包括非圆柱形外表面（由两平行平面或切面形成的被...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E4%BA%8E%E6%96%87%E4%BA%AE.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">不是小阳</div><div class="author-info-description">分享一些技术和一些平平无奇的生活</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">10</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/bushixiaoyang"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/bushixiaoyang" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zhanghongyang321@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到不是小阳の小破站<br>灵感本易逝，行动应当下。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9C%BA%E5%8A%A0%E5%B7%A5%E5%B7%A5%E8%89%BA%EF%BC%9A%E5%87%8F%E6%9D%90%E3%80%81%E5%A2%9E%E6%9D%90%E3%80%81%E7%84%8A%E6%8E%A5%E4%B8%8E%E6%95%B0%E6%8E%A7%E5%8C%96%E5%8A%A0%E5%B7%A5"><span class="toc-number">1.</span> <span class="toc-text">机加工工艺：减材、增材、焊接与数控化加工</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%80%BB%E8%A7%88%E6%A1%86%E6%9E%B6"><span class="toc-number">1.1.</span> <span class="toc-text">一、总览框架</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%87%8F%E6%9D%90%E5%8A%A0%E5%B7%A5%EF%BC%9A%E4%BB%8E%E6%AF%9B%E5%9D%AF%E5%88%B0%E6%88%90%E5%93%81%E7%9A%84%E5%8E%BB%E9%99%A4%E8%89%BA%E6%9C%AF"><span class="toc-number">1.2.</span> <span class="toc-text">二、减材加工：从毛坯到成品的去除艺术</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E4%BC%A0%E7%BB%9F%E5%88%87%E5%89%8A%E5%8A%A0%E5%B7%A5"><span class="toc-number">1.2.1.</span> <span class="toc-text">（一）传统切削加工</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-%E8%BD%A6%E5%89%8A"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">1. 车削</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-%E9%93%A3%E5%89%8A"><span class="toc-number">1.2.1.2.</span> <span class="toc-text">2. 铣削</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-%E9%92%BB%E5%89%8A%E4%B8%8E%E5%AD%94%E5%8A%A0%E5%B7%A5"><span class="toc-number">1.2.1.3.</span> <span class="toc-text">3. 钻削与孔加工</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-%E9%95%97%E5%89%8A"><span class="toc-number">1.2.1.4.</span> <span class="toc-text">4. 镗削</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5-%E7%A3%A8%E5%89%8A"><span class="toc-number">1.2.1.5.</span> <span class="toc-text">5. 磨削</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-%E5%88%A8%E5%89%8A%E4%B8%8E%E6%8F%92%E5%89%8A"><span class="toc-number">1.2.1.6.</span> <span class="toc-text">6. 刨削与插削</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-%E6%8B%89%E5%89%8A"><span class="toc-number">1.2.1.7.</span> <span class="toc-text">7. 拉削</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#8-%E9%94%AF%E5%89%8A%E4%B8%8E%E5%88%87%E6%96%AD"><span class="toc-number">1.2.1.8.</span> <span class="toc-text">8. 锯削与切断</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#9-%E9%BD%BF%E8%BD%AE%E5%8A%A0%E5%B7%A5%E4%B8%8E%E8%9E%BA%E7%BA%B9%E5%8A%A0%E5%B7%A5"><span class="toc-number">1.2.1.9.</span> <span class="toc-text">9. 齿轮加工与螺纹加工</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E7%89%B9%E7%A7%8D%E5%8A%A0%E5%B7%A5"><span class="toc-number">1.2.2.</span> <span class="toc-text">（二）特种加工</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E6%95%B0%E6%8E%A7%E5%8C%96%E4%B8%8E%E5%8A%A0%E5%B7%A5%E4%B8%AD%E5%BF%83"><span class="toc-number">1.2.3.</span> <span class="toc-text">（三）数控化与加工中心</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%A2%9E%E6%9D%90%E5%8A%A0%E5%B7%A5%EF%BC%9A%E9%80%90%E5%B1%82%E7%B4%AF%E7%A7%AF%E7%9A%84%E5%88%B6%E9%80%A0%E6%96%B9%E5%BC%8F"><span class="toc-number">1.3.</span> <span class="toc-text">三、增材加工：逐层累积的制造方式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%84%8A%E6%8E%A5%E5%A2%9E%E6%9D%90%E5%88%B6%E9%80%A0%EF%BC%88%E5%AE%9A%E5%90%91%E8%83%BD%E9%87%8F%E6%B2%89%E7%A7%AF%E7%B1%BB%EF%BC%89"><span class="toc-number">1.3.1.</span> <span class="toc-text">（一）焊接增材制造（定向能量沉积类）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%94%B5%E5%BC%A7%E5%A2%9E%E6%9D%90%E5%88%B6%E9%80%A0%EF%BC%88WAAM%EF%BC%89"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">电弧增材制造（WAAM）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%AB%98%E8%83%BD%E6%9D%9F%E5%A2%9E%E6%9D%90%E5%88%B6%E9%80%A0"><span class="toc-number">1.3.1.2.</span> <span class="toc-text">高能束增材制造</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E7%B2%89%E6%9C%AB%E5%BA%8A%E5%A2%9E%E6%9D%90%E5%88%B6%E9%80%A0"><span class="toc-number">1.3.2.</span> <span class="toc-text">（二）粉末床增材制造</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E5%A1%91%E6%96%99%E7%B1%BB%E5%A2%9E%E6%9D%90%E5%88%B6%E9%80%A0"><span class="toc-number">1.3.3.</span> <span class="toc-text">（三）塑料类增材制造</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E4%BC%A0%E7%BB%9F%E7%84%8A%E6%8E%A5%E6%96%B9%E6%B3%95%E5%85%A8%E8%B0%B1"><span class="toc-number">1.4.</span> <span class="toc-text">四、传统焊接方法全谱</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%80%EF%BC%89%E7%86%94%E7%84%8A"><span class="toc-number">1.4.1.</span> <span class="toc-text">（一）熔焊</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%BA%8C%EF%BC%89%E5%8E%8B%E7%84%8A"><span class="toc-number">1.4.2.</span> <span class="toc-text">（二）压焊</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E4%B8%89%EF%BC%89%E9%92%8E%E7%84%8A"><span class="toc-number">1.4.3.</span> <span class="toc-text">（三）钎焊</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%84%8A%E6%8E%A5%E6%96%B9%E6%B3%95%E7%BB%8F%E6%B5%8E%E6%80%A7%E9%80%9F%E6%9F%A5"><span class="toc-number">1.4.4.</span> <span class="toc-text">焊接方法经济性速查</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%BB%BC%E5%90%88%E9%80%89%E5%9E%8B%E9%80%BB%E8%BE%91"><span class="toc-number">1.5.</span> <span class="toc-text">五、综合选型逻辑</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/" title="机加工"><img src="/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="机加工"/></a><div class="content"><a class="title" href="/2026/09/23/%E6%9C%BA%E5%8A%A0%E5%B7%A5/" title="机加工">机加工</a><time datetime="2026-09-23T13:49:59.000Z" title="发表于 2026-09-23 21:49:59">2026-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/" title="机械 - 公差与配合"><img src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="机械 - 公差与配合"/></a><div class="content"><a class="title" href="/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/" title="机械 - 公差与配合">机械 - 公差与配合</a><time datetime="2026-09-23T13:38:10.000Z" title="发表于 2026-09-23 21:38:10">2026-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E8%87%AA%E7%94%B1%E5%BA%A6/" title="自由度"><img src="/img/%E5%87%8C%E4%B9%B1%E9%BB%91%E5%8F%91-%E5%A3%81%E7%BA%B8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="自由度"/></a><div class="content"><a class="title" href="/2026/09/23/%E8%87%AA%E7%94%B1%E5%BA%A6/" title="自由度">自由度</a><time datetime="2026-09-23T13:30:28.000Z" title="发表于 2026-09-23 21:30:28">2026-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/23/%E5%8A%9B%E3%80%81%E5%8A%9B%E7%9F%A9%E3%80%81%E5%BA%94%E5%8A%9B%E4%B8%8E%E6%9D%90%E6%96%99%E6%80%A7%E8%83%BD/" title="力、力矩、应力与材料性能"><img src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="力、力矩、应力与材料性能"/></a><div class="content"><a class="title" href="/2026/09/23/%E5%8A%9B%E3%80%81%E5%8A%9B%E7%9F%A9%E3%80%81%E5%BA%94%E5%8A%9B%E4%B8%8E%E6%9D%90%E6%96%99%E6%80%A7%E8%83%BD/" title="力、力矩、应力与材料性能">力、力矩、应力与材料性能</a><time datetime="2026-09-23T13:24:03.000Z" title="发表于 2026-09-23 21:24:03">2026-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/20/%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%A0%E5%8A%A8%E6%96%B9%E5%BC%8F/" title="常见的传动方式"><img src="/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="常见的传动方式"/></a><div class="content"><a class="title" href="/2026/09/20/%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%A0%E5%8A%A8%E6%96%B9%E5%BC%8F/" title="常见的传动方式">常见的传动方式</a><time datetime="2026-09-20T13:25:06.000Z" title="发表于 2026-09-20 21:25:06">2026-09-20</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/%5Cimg%5C%E4%BA%8C%E6%AC%A1%E5%85%83-%E5%90%8D%E4%BE%A6%E6%8E%A2%E6%9F%AF%E5%8D%97.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 不是小阳</span></div><div class="footer_custom_text">这只是一个起点,但非终点,加油。jsut do it !</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"></div><script src="//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>标准件的选型（三） | 不是小阳の小破站</title><meta name="author" content="不是小阳"><meta name="copyright" content="不是小阳"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="气缸分类与选型指南气缸按动作方式可分为单作用气缸和双作用气缸两大类；按结构形式可分为活塞式、膜片式、无杆式、摆动式、冲击式等。选型方法主要有理论计算法、查表法（样本法）和经验类比法三种。其中，以负载力计算为核心、辅以厂商样本查表，是工程实践中最通用的组合方式。  说明：同一台气缸可能同时属于多个分类维度。以下分类用于选型时快速定位，实际型号、安装代号、接口尺寸等应结合厂商样本确认。   一、气缸的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="标准件的选型（三）">
+<meta property="og:url" content="http://bushixiaoyang.online/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%89%EF%BC%89/index.html">
+<meta property="og:site_name" content="不是小阳の小破站">
+<meta property="og:description" content="气缸分类与选型指南气缸按动作方式可分为单作用气缸和双作用气缸两大类；按结构形式可分为活塞式、膜片式、无杆式、摆动式、冲击式等。选型方法主要有理论计算法、查表法（样本法）和经验类比法三种。其中，以负载力计算为核心、辅以厂商样本查表，是工程实践中最通用的组合方式。  说明：同一台气缸可能同时属于多个分类维度。以下分类用于选型时快速定位，实际型号、安装代号、接口尺寸等应结合厂商样本确认。   一、气缸的">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://bushixiaoyang.online/img/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB-%E7%94%B5%E9%94%AF%E4%BA%BA.png">
+<meta property="article:published_time" content="2026-09-29T12:43:37.000Z">
+<meta property="article:modified_time" content="2026-09-29T13:39:09.126Z">
+<meta property="article:author" content="不是小阳">
+<meta property="article:tag" content="机械">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://bushixiaoyang.online/img/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB-%E7%94%B5%E9%94%AF%E4%BA%BA.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "标准件的选型（三）",
+  "url": "http://bushixiaoyang.online/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%89%EF%BC%89/",
+  "image": "http://bushixiaoyang.online/img/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB-%E7%94%B5%E9%94%AF%E4%BA%BA.png",
+  "datePublished": "2026-09-29T12:43:37.000Z",
+  "dateModified": "2026-09-29T13:39:09.126Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "不是小阳",
+      "url": "https://bushixiaoyang.online"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://bushixiaoyang.online/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%89%EF%BC%89/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta/><link rel="stylesheet" href="/css/index.css?v=5.5.3"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 不是小阳","link":"链接: ","source":"来源: 不是小阳の小破站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '标准件的选型（三）',
+  isHighlightShrink: undefined,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.1"></head><body><div class="bg-animation" id="web_bg" style="background-image: url(/img/%E6%99%9A%E9%9C%9E%E6%B5%B7%E6%BB%A9.png);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E4%BA%8E%E6%96%87%E4%BA%AE.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tucao/"><i class="fa-fw fas fa-comment-dots"></i><span> 吐槽</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/%5Cimg%5C%E6%99%9A%E9%9C%9E%E6%B5%B7%E6%BB%A9.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">不是小阳の小破站</span></a><a class="nav-page-title" href="/"><span class="site-name">标准件的选型（三）</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tucao/"><i class="fa-fw fas fa-comment-dots"></i><span> 吐槽</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">标准件的选型（三）</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-09-29T12:43:37.000Z" title="发表于 2026-09-29 20:43:37">2026-09-29</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-09-29T13:39:09.126Z" title="更新于 2026-09-29 21:39:09">2026-09-29</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E9%80%89%E5%9E%8B%E8%AE%A1%E7%AE%97/">选型计算</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="气缸分类与选型指南"><a href="#气缸分类与选型指南" class="headerlink" title="气缸分类与选型指南"></a>气缸分类与选型指南</h1><p>气缸按动作方式可分为单作用气缸和双作用气缸两大类；按结构形式可分为活塞式、膜片式、无杆式、摆动式、冲击式等。选型方法主要有理论计算法、查表法（样本法）和经验类比法三种。其中，以负载力计算为核心、辅以厂商样本查表，是工程实践中最通用的组合方式。</p>
+<blockquote>
+<p>说明：同一台气缸可能同时属于多个分类维度。以下分类用于选型时快速定位，实际型号、安装代号、接口尺寸等应结合厂商样本确认。</p>
+</blockquote>
+<hr>
+<h2 id="一、气缸的分类"><a href="#一、气缸的分类" class="headerlink" title="一、气缸的分类"></a>一、气缸的分类</h2><p>工程上通常从动作方式、结构形式、安装方式、功能用途、驱动压力和特殊环境等角度划分。</p>
+<h3 id="按动作方式、结构形式与功能用途分类"><a href="#按动作方式、结构形式与功能用途分类" class="headerlink" title="按动作方式、结构形式与功能用途分类"></a>按动作方式、结构形式与功能用途分类</h3><table>
+<thead>
+<tr>
+<th>分类维度</th>
+<th>类型</th>
+<th>结构特点</th>
+<th>典型适用工况</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>动作方式</td>
+<td>单作用气缸</td>
+<td>仅一端供气，靠弹簧或自重复位；结构简单、耗气少</td>
+<td>短行程夹紧、定位、顶出、分类等轻载单向动作</td>
+</tr>
+<tr>
+<td>动作方式</td>
+<td>双作用气缸</td>
+<td>活塞两侧交替供气，双向输出力，行程可设计较长</td>
+<td>推拉、举升、夹持、往复定位等几乎所有需要双向可控直线运动的场合。注意：有杆腔输出力小于无杆腔，拉力方向需单独校核</td>
+</tr>
+<tr>
+<td>结构形式</td>
+<td>活塞式气缸（标准缸）</td>
+<td>缸筒＋活塞＋活塞杆，符合 ISO 15552&#x2F;6432&#x2F;21287 等标准</td>
+<td>通用直线驱动，自动化生产线、机床、包装机械</td>
+</tr>
+<tr>
+<td>结构形式</td>
+<td>膜片式气缸</td>
+<td>用膜片代替活塞，密封性好、无滑动摩擦损耗，但行程短</td>
+<td>夹紧、分度、短行程高频动作，小负载场合</td>
+</tr>
+<tr>
+<td>结构形式</td>
+<td>无杆气缸</td>
+<td>取消活塞杆，靠磁耦合或机械滑块传递力，节省空间</td>
+<td>长行程、空间受限场合，如电子产线物料搬运、洁净环境。磁耦合型存在滑差和负载限制</td>
+</tr>
+<tr>
+<td>结构形式</td>
+<td>摆动气缸</td>
+<td>叶片式或齿轮齿条式，输出轴在小于 280° 范围内摆动</td>
+<td>翻转、转向、分度、阀门控制等需要旋转动作的场合</td>
+</tr>
+<tr>
+<td>结构形式</td>
+<td>冲击气缸</td>
+<td>将压力能转换为活塞高速（10~20 m&#x2F;s）动能做功</td>
+<td>冲压、锻造、破碎、打印等需要冲击能量的场合</td>
+</tr>
+<tr>
+<td>功能用途</td>
+<td>薄型&#x2F;紧凑型气缸</td>
+<td>缸体截面压缩，结构紧凑、重量轻</td>
+<td>安装空间窄、行程短的夹具和专用设备</td>
+</tr>
+<tr>
+<td>功能用途</td>
+<td>导杆气缸</td>
+<td>自带直线轴承或铜套导向，可承受横向载荷</td>
+<td>阻挡、上料、推料、冲压、夹持等有侧向力的场合</td>
+</tr>
+<tr>
+<td>功能用途</td>
+<td>滑台气缸</td>
+<td>十字滚珠导轨导向，抗转矩、负载能力强</td>
+<td>精密定位、高刚性要求的搬运、装配工位</td>
+</tr>
+<tr>
+<td>功能用途</td>
+<td>气爪（夹持气缸）</td>
+<td>平行、摆动、三点等多种抓取形式，可自动对中</td>
+<td>机械手末端抓取，现代气动机械手关键部件</td>
+</tr>
+<tr>
+<td>功能用途</td>
+<td>锁紧&#x2F;制动气缸</td>
+<td>内置机械锁紧机构，断气保持</td>
+<td>需要高制动精度、断气安全保持的场合，如垂直升降、防坠</td>
+</tr>
+</tbody></table>
+<h3 id="按安装方式、驱动压力与特殊环境分类"><a href="#按安装方式、驱动压力与特殊环境分类" class="headerlink" title="按安装方式、驱动压力与特殊环境分类"></a>按安装方式、驱动压力与特殊环境分类</h3><table>
+<thead>
+<tr>
+<th>分类维度</th>
+<th>类型</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>安装方式</td>
+<td>脚座式（L）、法兰式（F）、耳环式（B）、耳轴式（T）</td>
+<td>固定式安装适用于常规气动应用；耳轴&#x2F;轴销式适用于缸体需随机构摆动的场合。不同厂商代号可能不同</td>
+</tr>
+<tr>
+<td>安装方式</td>
+<td>回转式</td>
+<td>缸体随机床主轴一同回转，如车床、磨床夹具</td>
+</tr>
+<tr>
+<td>安装方式</td>
+<td>自由安装型&#x2F;嵌入式</td>
+<td>设备空间受限，需多方向固定的紧凑场合</td>
+</tr>
+<tr>
+<td>驱动压力</td>
+<td>低压型（0.1~0.3 MPa）</td>
+<td>轻负载、节能场合；注意低于 0.1 MPa 长期运行会导致润滑不足</td>
+</tr>
+<tr>
+<td>驱动压力</td>
+<td>标准型（0.4~0.6 MPa）</td>
+<td>工厂常规气源压力，应用最广</td>
+</tr>
+<tr>
+<td>驱动压力</td>
+<td>高压型（0.6~1.0 MPa 以上）</td>
+<td>高频往复或重载场合；标准气缸工作压力一般 ≤1.0~1.2 MPa</td>
+</tr>
+<tr>
+<td>特殊环境</td>
+<td>高温型、耐腐蚀型、洁净型</td>
+<td>热处理、化工、食品医药等特殊环境</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="二、气缸选型方法"><a href="#二、气缸选型方法" class="headerlink" title="二、气缸选型方法"></a>二、气缸选型方法</h2><p>工程上常用的选型方法主要有三种，各有侧重，实际项目中往往组合使用。</p>
+<h3 id="三种选型方法对比"><a href="#三种选型方法对比" class="headerlink" title="三种选型方法对比"></a>三种选型方法对比</h3><table>
+<thead>
+<tr>
+<th>方法</th>
+<th>核心思路</th>
+<th>适用场景</th>
+<th>关键公式&#x2F;参数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>理论计算法</td>
+<td>由负载力反推缸径，再逐项校核行程、缓冲、安装</td>
+<td>新设计、关键工况、负载不明或要求高可靠性的场合</td>
+<td>(F_t&#x3D;P A)，(F&#x3D;\eta F_t)，(D&#x3D;\sqrt{4F&#x2F;(\pi P \eta)})</td>
+</tr>
+<tr>
+<td>查表法（样本法）</td>
+<td>直接查厂商样本中的“理论输出力表”“缸径-负载对应图”“缓冲能力表”</td>
+<td>标准件选用、快速报价、常规工位</td>
+<td>厂商受压面积表、理论出力表、缓冲动能表</td>
+</tr>
+<tr>
+<td>经验类比法</td>
+<td>参考同类设备、同工况已成熟使用的型号规格</td>
+<td>改型设计、备件替换、紧急采购</td>
+<td>同类机型规格、行业惯例</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="1-理论计算法（核心方法）"><a href="#1-理论计算法（核心方法）" class="headerlink" title="1. 理论计算法（核心方法）"></a>1. 理论计算法（核心方法）</h2><p>理论计算法是选型的根本。以单活塞杆双作用缸为例，完整步骤如下。</p>
+<h3 id="第一步：确定负载力-F"><a href="#第一步：确定负载力-F" class="headerlink" title="第一步：确定负载力 (F)"></a>第一步：确定负载力 (F)</h3><p>分析气缸轴向实际负载，包括工件自重、导轨摩擦力、夹具反力、加减速惯性力、密封摩擦、切削或冲压反力等。</p>
+<ul>
+<li>水平滑动负载：(F&#x3D;\mu m g)（未计加速时）；若需加速，(F&#x3D;\mu m g + m a)。</li>
+<li>垂直提升负载：(F&#x3D;m g)（需克服全部重力）；若需加速，(F&#x3D;m(g+a))。</li>
+<li>其他工况：按实际受力合成。垂直提升必须将重力作为持续负载，并建议额外留安全余量。</li>
+</ul>
+<p>其中：<br>(\mu) 为摩擦系数，(m) 为运动件质量，(g) 为重力加速度，(a) 为加速度。</p>
+<h3 id="第二步：选定负载率-eta"><a href="#第二步：选定负载率-eta" class="headerlink" title="第二步：选定负载率 (\eta)"></a>第二步：选定负载率 (\eta)</h3><p>负载率定义为气缸实际负载力与理论输出力之比：</p>
+<p>[<br>\eta&#x3D;\frac{F}{F_t}<br>]</p>
+<p>其取值取决于运动状态：</p>
+<table>
+<thead>
+<tr>
+<th>工况</th>
+<th>负载率 (\eta)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>阻性负载（夹紧、定位等静态）</td>
+<td>≤0.7~0.8</td>
+</tr>
+<tr>
+<td>惯性负载，低速 (v&lt;100) mm&#x2F;s</td>
+<td>≤0.65</td>
+</tr>
+<tr>
+<td>惯性负载，中速 (v&#x3D;100\sim500) mm&#x2F;s</td>
+<td>≤0.5</td>
+</tr>
+<tr>
+<td>惯性负载，高速 (v&gt;500) mm&#x2F;s</td>
+<td>≤0.35</td>
+</tr>
+</tbody></table>
+<p>速度越高、惯性越大，(\eta) 应越小，以留出压力波动、摩擦增加和长期磨损余量。</p>
+<h3 id="第三步：计算缸径-D"><a href="#第三步：计算缸径-D" class="headerlink" title="第三步：计算缸径 (D)"></a>第三步：计算缸径 (D)</h3><p>双作用气缸无杆腔理论推力：</p>
+<p>[<br>F_t&#x3D;P\times \frac{\pi D^2}{4}<br>]</p>
+<p>实际所需理论推力：</p>
+<p>[<br>F_t&#x3D;\frac{F}{\eta}<br>]</p>
+<p>因此缸径计算式为：</p>
+<p>[<br>D&#x3D;\sqrt{\frac{4F}{\pi P \eta}}<br>]</p>
+<p>若有杆腔方向承受负载，还需校核有杆腔理论拉力：</p>
+<p>[<br>F_{t,\text{pull}}&#x3D;P\times \frac{\pi(D^2-d^2)}{4}<br>]</p>
+<p>其中 (d) 为活塞杆直径。拉力方向的有效面积较小，输出力小于无杆腔推力。</p>
+<p>单位说明：  </p>
+<ul>
+<li>(F)：N  </li>
+<li>(P)：MPa，且 (1\text{ MPa}&#x3D;1\text{ N&#x2F;mm}^2)  </li>
+<li>(D)、(d)：mm</li>
+</ul>
+<p>算出 (D) 后，按标准缸径系列圆整，如 32、40、50、63、80、100、125 mm 等。</p>
+<p><strong>示例：</strong><br>工件质量 (m&#x3D;250) kg，水平滑动，(\mu&#x3D;0.25)，(P&#x3D;0.4) MPa，平均速度对应中速，取 (\eta&#x3D;0.5)。</p>
+<p>[<br>F&#x3D;\mu m g&#x3D;0.25\times250\times9.81\approx613\text{ N}<br>]</p>
+<p>[<br>F_t&#x3D;\frac{F}{\eta}&#x3D;\frac{613}{0.5}\approx1226\text{ N}<br>]</p>
+<p>[<br>D&#x3D;\sqrt{\frac{4F_t}{\pi P}}<br>&#x3D;\sqrt{\frac{4\times1226}{\pi\times0.4}}<br>\approx62.5\text{ mm}<br>]</p>
+<p>圆整取标准缸径 <strong>63 mm</strong>。<br>也可直接计算：</p>
+<p>[<br>D&#x3D;\sqrt{\frac{4F}{\pi P\eta}}<br>&#x3D;\sqrt{\frac{4\times613}{\pi\times0.4\times0.5}}<br>\approx62.5\text{ mm}<br>]</p>
+<h3 id="第四步：选定行程-S"><a href="#第四步：选定行程-S" class="headerlink" title="第四步：选定行程 (S)"></a>第四步：选定行程 (S)</h3><p>按机构实际需要的有效移动距离确定，并预留 5<del>10 mm 缓冲余量；夹紧等机构需多留 10</del>20 mm。一般不选用满行程。长行程还需校核活塞杆受压弯曲强度。</p>
+<h3 id="第五步：校核缓冲能力"><a href="#第五步：校核缓冲能力" class="headerlink" title="第五步：校核缓冲能力"></a>第五步：校核缓冲能力</h3><p>行程终端负载动能：</p>
+<p>[<br>E&#x3D;\frac12 m v^2<br>]</p>
+<p>该动能必须小于气缸缓冲允许吸收值。气缓冲吸收能力强于橡胶垫缓冲；超出时应增大缸径、加装外部液压缓冲器或设置限位器。<br>注意：缓冲只能减弱冲击，不能替代机械限位。</p>
+<h3 id="第六步：确定安装形式与接口"><a href="#第六步：确定安装形式与接口" class="headerlink" title="第六步：确定安装形式与接口"></a>第六步：确定安装形式与接口</h3><p>根据受力方向选择脚座、法兰、耳环、耳轴等安装方式，避免活塞杆承受偏心或横向载荷。同时核对气管接口尺寸：</p>
+<ul>
+<li>缸径 ≤40 mm：多用 Rc1&#x2F;8~Rc1&#x2F;4；</li>
+<li>缸径 50<del>80 mm：多用 Rc1&#x2F;4</del>Rc3&#x2F;8；</li>
+<li>缸径 ≥100 mm：多用 Rc1&#x2F;2 以上。</li>
+</ul>
+<p>不同厂商可能不同，应以样本为准。</p>
+<h3 id="第七步：选定附件"><a href="#第七步：选定附件" class="headerlink" title="第七步：选定附件"></a>第七步：选定附件</h3><p>按需配置：</p>
+<ul>
+<li>磁性开关：位置检测；</li>
+<li>调速阀：速度控制；</li>
+<li>浮动接头：消除装配偏差；</li>
+<li>防尘罩：粉尘环境；</li>
+<li>液压缓冲器：高速、大惯量工况；</li>
+<li>机械限位：防止越程。</li>
+</ul>
+<h3 id="第八步：核算耗气量与配管口径"><a href="#第八步：核算耗气量与配管口径" class="headerlink" title="第八步：核算耗气量与配管口径"></a>第八步：核算耗气量与配管口径</h3><p>根据缸径、行程、动作频率和使用压力核算耗气量，并据此选择电磁阀流量、气管内径和接头。<br>若大缸径、长行程要求快速动作，气管过细、弯头过多或阀流量不足会成为瓶颈，表现为动作迟缓，而不一定是气缸本身出力不够。</p>
+<hr>
+<h2 id="2-查表法（样本法）"><a href="#2-查表法（样本法）" class="headerlink" title="2. 查表法（样本法）"></a>2. 查表法（样本法）</h2><p>在缸径计算的基础上，通过厂商样本中的“理论输出力表”“受压面积表”“缸径-负载-压力对应图”“缓冲动能允许值表”快速锁定型号。例如 FESTO DSBC 系列、SMC CP96 系列均提供按 ISO 15552 标准编制的完整选型图表，可直接由负载力和压力查得推荐缸径。</p>
+<p>查表法适用于标准件选用和快速报价，但前提是负载工况明确。当工况介于两档之间时，应向大一档缸径圆整，并重新核对耗气量与缓冲能力。</p>
+<hr>
+<h2 id="3-经验类比法"><a href="#3-经验类比法" class="headerlink" title="3. 经验类比法"></a>3. 经验类比法</h2><p>参考同类设备、同工况已成熟使用的气缸规格直接选用，适用于改型设计、备件替换、紧急采购。该法省时，但存在隐患：若实际负载、动作频率、环境条件与原机型存在差异，容易出现出力不足或寿命不达标。建议在经验类比的基础上，仍用理论计算法复核关键参数。</p>
+<hr>
+<h2 id="三、选型流程总结"><a href="#三、选型流程总结" class="headerlink" title="三、选型流程总结"></a>三、选型流程总结</h2><p>理论计算法的核心流程可概括为：</p>
+<p><strong>负载分析 → 负载率选定 → 缸径计算并圆整 → 行程确定 → 缓冲校核 → 安装形式确认 → 附件选配 → 耗气量与配管口径核算</strong></p>
+<hr>
+<h2 id="四、选型中常见的错误"><a href="#四、选型中常见的错误" class="headerlink" title="四、选型中常见的错误"></a>四、选型中常见的错误</h2><ol>
+<li><p><strong>缸径选小</strong><br>理论出力看似够，但未考虑压力波动、摩擦增加、长期磨损等余量，运行中推不动或卡顿。应按负载的 1.5~2 倍预留余量，垂直提升更应放大。</p>
+</li>
+<li><p><strong>行程选满</strong><br>活塞长期顶在理论行程末端工作，活塞杆与缸盖碰撞，密封件局部磨损加快；缓冲只能减弱冲击，不能替代机械限位。应预留 5~10 mm 余量。</p>
+</li>
+<li><p><strong>忽视横向负载</strong><br>活塞杆承受侧向力能力有限，偏载会加速密封圈磨损、漏气；侧向力大时应增加独立导向或选用带导杆气缸。</p>
+</li>
+<li><p><strong>缓冲能力不校核</strong><br>高速、大惯量负载动能超出气缸缓冲允许值，导致端部撞击加剧、气缸早期损坏。应计算 (E&#x3D;\frac12 m v^2) 并对照样本允许值。</p>
+</li>
+<li><p><strong>垂直升降未考虑失压安全</strong><br>普通气缸不具备防坠能力，断气后负载可能下坠伤人；涉及重物或人员安全时，应单独设计机械锁止或防坠方案。</p>
+</li>
+<li><p><strong>配管与阀流量不匹配</strong><br>大缸径、长行程要求快速动作时，气管过细、弯头过多、阀流量不足会成为瓶颈，导致动作迟缓，而非气缸本身出力不够。</p>
+</li>
+<li><p><strong>忽略有杆腔拉力</strong><br>双作用气缸有杆腔有效面积较小，拉力小于推力。若只按无杆腔推力选缸径，可能导致回程拉力不足。</p>
+</li>
+<li><p><strong>忽略环境与润滑条件</strong><br>高温、低温、粉尘、腐蚀、洁净等环境需选特殊型；低压长期运行可能导致润滑不足，影响寿命。</p>
+</li>
+</ol>
+<hr>
+<h2 id="五、结语"><a href="#五、结语" class="headerlink" title="五、结语"></a>五、结语</h2><p>气缸选型的本质是在出力余量、动作速度、缓冲能力、安装空间和能耗成本之间取得平衡。缸径并非越大越稳妥，行程并非越满越紧凑，所有参数都应回归到负载工况本身进行系统化校核，再结合厂商样本最终锁定型号。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://bushixiaoyang.online">不是小阳</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://bushixiaoyang.online/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%89%EF%BC%89/">http://bushixiaoyang.online/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%89%EF%BC%89/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://bushixiaoyang.online" target="_blank">不是小阳の小破站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%9C%BA%E6%A2%B0/">机械</a></div><div class="post-share"><div class="social-share" data-image="/img/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB-%E7%94%B5%E9%94%AF%E4%BA%BA.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E5%9B%9B%EF%BC%89/" title="标准件的选型（四）"><img class="cover" src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">标准件的选型（四）</div></div><div class="info-2"><div class="info-item-1">轴承的选型计算 核心逻辑：在“载荷—转速—寿命”三角约束下，叠加空间、环境、精度、成本等多目标平衡。常用方法：类比法、计算法、试算法、综合评价法。四者不是互斥关系，而是由粗到细、由定性到定量的递进工具链。   一、轴承分类轴承按摩擦性质首先分为两大类：  滚动轴承：依靠滚动摩擦工作。 滑动轴承：依靠滑动摩擦工作。  进一步可按滚动体几何形状、载荷方向、润滑机理、调心性、列数、能否分离等继续细分。 1.1 滚动轴承与滑动轴承总体对比   对比项 滚动轴承 滑动轴承    摩擦性质 滚动摩擦 滑动摩擦   启动阻力 小 较大   承载能力 中到高，滚子型更高 高，尤其适合重载、冲击载荷   高速性能 部分类型适合高速 动压&#x2F;静压轴承适合高速高精度   精度与抗振 受滚动体与保持架影响 油膜可吸振，回转精度高   维护 互换性好，维护相对简单 对润滑、供油、维护要求高   典型场景 电机、汽车、机床、家电、风机 汽轮机、轧机、水轮机、精密主轴、大型曲轴    1.2 滚动轴承滚动轴承通常由 内圈、外圈、滚动体、保持架 四部分组成，部分轴承还带密封圈、防尘盖、挡圈等附件。其特点...</div></div></div></a><a class="pagination-related" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%BA%8C%EF%BC%89/" title="标准件的选型（二）"><img class="cover" src="/img/%E5%B0%8F%E5%AD%A4%E7%8B%AC.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">标准件的选型（二）</div></div><div class="info-2"><div class="info-item-1">电机分类全貌与各类型核心选型计算方法 电机按工作电源可分为直流电机与交流电机两大族系，按控制方式又衍生出伺服电机、步进电机、直线电机等专用类型，每种电机的工作原理与特性参数差异决定了其选型计算的侧重点不同——异步电机重功率与起动转矩校核，伺服电机重惯量匹配与均方根转矩，步进电机重矩频曲线与保持转矩，直流电机重调速特性与反电势常数，直线电机则直接以推力替代扭矩进行计算。   一、电机分类总览   大类 子类 工作原理 典型应用 选型核心参数    交流异步电机 三相鼠笼式、绕线式 旋转磁场感应转子电流，存在转差率 风机、水泵、传送带、机床主轴 功率、起动转矩、过载倍数   交流同步电机 永磁同步(PMSM)、电励磁、磁阻同步 转子与旋转磁场严格同步 新能源车、精密传动、发电机 功率、功率因数、效率   直流电机 有刷(永磁&#x2F;电磁)、无刷(BLDC) 电枢电流与磁场作用产生转矩 电动工具、无人机、AGV 转矩常数、反电势常数、调速范围   伺服电机 交流伺服(PMSM+编码器)、直流伺服 闭环位置&#x2F;速度&#x2F;转矩控制 机器人、数控机床、半导体设备 峰值转矩、...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2026/09/23/%E8%87%AA%E7%94%B1%E5%BA%A6/" title="自由度"><img class="cover" src="/img/%E5%B0%8F%E5%AD%A4%E7%8B%AC.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-23</div><div class="info-item-2">自由度</div></div><div class="info-2"><div class="info-item-1">自由度一、自由度的基本概念1.1 自由度的定义任何一个工件在空间直角坐标系中都有且只有六个自由度，即沿X、Y、Z三个坐标轴方向的移动自由度（分别记为 (\vec{x})、(\vec{y})、(\vec{z})）和绕这三个坐标轴的转动自由度（分别记为 (\hat{x})、(\hat{y})、(\hat{z})）。这六个独立运动决定了工件在空间中的位置和姿态。 1.2 工件定位的实质工件在夹具中定位，其实质就是根据零件加工要求，设置定位元件来限制那些影响加工精度的自由度，使工件取得正确的位置。定位的目的是使同一批工件在加工时占有一致的正确加工位置。 1.3 自由度与定位、夹紧的区别定位与夹紧是两个完全不同的概念，必须严格区分。定位是通过定位元件限制工件的自由度，使工件在夹具中占有确定的位置；夹紧是对工件施加外力，使其已确定的位置在加工过程中保持不变。约束自由度的分析不考虑外力影响，工件在外力作用下不能运动是夹紧的任务，而非定位的任务。 二、六点定位原理2.1 基本原理对于确定的刚体，如果设置相应的六个约束，分别用于限制该刚体的六个运动自由度，就可以使该自由刚体在空间有一个确定的位置，...</div></div></div></a><a class="pagination-related" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%BA%8C%EF%BC%89/" title="标准件的选型（二）"><img class="cover" src="/img/%E5%B0%8F%E5%AD%A4%E7%8B%AC.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-29</div><div class="info-item-2">标准件的选型（二）</div></div><div class="info-2"><div class="info-item-1">电机分类全貌与各类型核心选型计算方法 电机按工作电源可分为直流电机与交流电机两大族系，按控制方式又衍生出伺服电机、步进电机、直线电机等专用类型，每种电机的工作原理与特性参数差异决定了其选型计算的侧重点不同——异步电机重功率与起动转矩校核，伺服电机重惯量匹配与均方根转矩，步进电机重矩频曲线与保持转矩，直流电机重调速特性与反电势常数，直线电机则直接以推力替代扭矩进行计算。   一、电机分类总览   大类 子类 工作原理 典型应用 选型核心参数    交流异步电机 三相鼠笼式、绕线式 旋转磁场感应转子电流，存在转差率 风机、水泵、传送带、机床主轴 功率、起动转矩、过载倍数   交流同步电机 永磁同步(PMSM)、电励磁、磁阻同步 转子与旋转磁场严格同步 新能源车、精密传动、发电机 功率、功率因数、效率   直流电机 有刷(永磁&#x2F;电磁)、无刷(BLDC) 电枢电流与磁场作用产生转矩 电动工具、无人机、AGV 转矩常数、反电势常数、调速范围   伺服电机 交流伺服(PMSM+编码器)、直流伺服 闭环位置&#x2F;速度&#x2F;转矩控制 机器人、数控机床、半导体设备 峰值转矩、...</div></div></div></a><a class="pagination-related" href="/2026/09/23/%E6%9C%BA%E6%A2%B0-%E5%85%AC%E5%B7%AE%E4%B8%8E%E9%85%8D%E5%90%88/" title="机械 - 公差与配合"><img class="cover" src="/img/%E4%BA%8C%E6%AC%A1%E5%85%83-%E5%90%8D%E4%BE%A6%E6%8E%A2%E6%9F%AF%E5%8D%97.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-23</div><div class="info-item-2">机械 - 公差与配合</div></div><div class="info-2"><div class="info-item-1">机械制图 - 公差与配合一、互换性与标准化互换性是指在同一规格的一批零部件中，可以不经选择、调整或修配，任取一件装配在机器上，并能达到规定的使用性能要求。按互换性原则组织生产，可合理进行生产分工和专业化协作，便于采用高效专用设备，缩短生产周期、降低成本，便于装配自动化。 公差与配合的国家标准体系主要包括：GB&#x2F;T 1800.1—2020《产品几何技术规范（GPS） 线性尺寸公差ISO代号体系 第1部分：公差、偏差和配合的基础》、GB&#x2F;T 1800.2—2020《第2部分：标准公差等级和孔、轴极限偏差表》、GB&#x2F;T 1801—2009《极限与配合 公差带和配合的选择》、GB&#x2F;T 1803—2003《极限与配合 尺寸至18mm孔、轴公差带》、GB&#x2F;T 1804—2000《一般公差 未注公差的线性和角度尺寸的公差》等。 二、基本术语及定义（一）孔与轴 孔：通常指工件的圆柱形内表面，也包括非圆柱形内表面（由两平行平面或切面形成的包容面），孔径用大写字母D表示。 轴：通常指工件的圆柱形外表面，也包括非圆柱形外表面（由两平行平面或切面形成的被...</div></div></div></a><a class="pagination-related" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E5%9B%9B%EF%BC%89/" title="标准件的选型（四）"><img class="cover" src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-29</div><div class="info-item-2">标准件的选型（四）</div></div><div class="info-2"><div class="info-item-1">轴承的选型计算 核心逻辑：在“载荷—转速—寿命”三角约束下，叠加空间、环境、精度、成本等多目标平衡。常用方法：类比法、计算法、试算法、综合评价法。四者不是互斥关系，而是由粗到细、由定性到定量的递进工具链。   一、轴承分类轴承按摩擦性质首先分为两大类：  滚动轴承：依靠滚动摩擦工作。 滑动轴承：依靠滑动摩擦工作。  进一步可按滚动体几何形状、载荷方向、润滑机理、调心性、列数、能否分离等继续细分。 1.1 滚动轴承与滑动轴承总体对比   对比项 滚动轴承 滑动轴承    摩擦性质 滚动摩擦 滑动摩擦   启动阻力 小 较大   承载能力 中到高，滚子型更高 高，尤其适合重载、冲击载荷   高速性能 部分类型适合高速 动压&#x2F;静压轴承适合高速高精度   精度与抗振 受滚动体与保持架影响 油膜可吸振，回转精度高   维护 互换性好，维护相对简单 对润滑、供油、维护要求高   典型场景 电机、汽车、机床、家电、风机 汽轮机、轧机、水轮机、精密主轴、大型曲轴    1.2 滚动轴承滚动轴承通常由 内圈、外圈、滚动体、保持架 四部分组成，部分轴承还带密封圈、防尘盖、挡圈等附件。其特点...</div></div></div></a><a class="pagination-related" href="/2026/09/20/%E6%9C%BA%E6%A2%B0%E4%B8%AD%E6%AF%94%E8%BE%83%E5%B8%B8%E7%94%A8%E7%9A%84%E9%87%91%E5%B1%9E%E6%9D%90%E6%96%99%E5%8F%8A%E9%9D%9E%E9%87%91%E5%B1%9E%E6%9D%90%E6%96%99/" title="机械中比较常用的金属材料及非金属材料"><img class="cover" src="/img/%E5%87%8C%E4%B9%B1%E9%BB%91%E5%8F%91-%E5%A3%81%E7%BA%B8.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-20</div><div class="info-item-2">机械中比较常用的金属材料及非金属材料</div></div><div class="info-2"><div class="info-item-1">在机械设计中，材料的选择直接决定了零件的强度、寿命、加工成本与整体性能。以下从金属材料与非金属材料两大类出发，对常用材料进行系统介绍。  一、金属材料金属材料是目前机械设计中用量最大、应用最广泛的一类材料，具有良好的导电性、导热性、延展性，且可通过热处理大幅调整性能。按组成可分为黑色金属（铁及铁合金）和有色金属（非铁金属）两大类。 （一）黑色金属1. 碳素结构钢碳素结构钢是机械设计中最基础、最经济的钢种，含碳量一般在0.04%～1.7%之间。 Q235A是最常用的普通碳素结构钢，具有高的塑性、韧性和焊接性能，广泛用于一般要求的零件和焊接结构，如拉杆、连杆、销、轴、螺钉、螺母、支架、机座等。 45钢是最常用的优质中碳调质钢，综合力学性能良好，但淬透性较低。经调质处理后，主要用于制造强度较高的运动件，如透平机叶轮、压缩机活塞、轴、齿轮、齿条、蜗杆等。35钢强度适当、塑性较好，是各种标准件和紧固件的常用材料，适于制造曲轴、杠杆、连杆等承受较大载荷的小截面零件。 2. 合金结构钢当碳素钢的性能无法满足要求时，需在钢中加入铬、锰、镍、硅、钼、钨等合金元素以改善其性能。 40Cr是使用最广泛...</div></div></div></a><a class="pagination-related" href="/2026/09/20/%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%A0%E5%8A%A8%E6%96%B9%E5%BC%8F/" title="常见的传动方式"><img class="cover" src="/img/%E6%B2%99%E6%BB%A9%E7%BE%8E%E8%85%BF.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2026-09-20</div><div class="info-item-2">常见的传动方式</div></div><div class="info-2"><div class="info-item-1">一、带传动1. 平带 效率：0.95～0.98，打滑、张紧不足时明显下降。 传动比：摩擦式：i &#x3D; n1&#x2F;n2 ≈ d2&#x2F;d1考虑滑动：i &#x3D; d2 &#x2F; [d1(1-ε)]，ε 为滑动率，约 1%～3%。实际使用中直接测 i &#x3D; n1&#x2F;n2。 经济性：初始成本低，维护中等，寿命较短，能耗中等。适合低精度、大中心距、低速轻载，不适合精密传动。  2. V带 效率：0.92～0.96，窄V带可达 0.93～0.97。 传动比：i &#x3D; n1&#x2F;n2 ≈ d2&#x2F;d1，有滑动，传动比不准确。 经济性：初始成本低，维护中等，寿命中等，能耗中等。批量越大越便宜。适合风机、水泵、搅拌站、农业机械等对同步要求不高的场合。  3. 多楔带 效率：0.93～0.97。 传动比：i &#x3D; n1&#x2F;n2 ≈ d2&#x2F;d1，仍属摩擦传动，有微小滑动。 经济性：初始成本中等，维护中等，寿命比普通V带长，能耗较低。适合汽车附件、高速风机、空间紧凑场合。  4. 同步带 效率：0.96～0.9...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E4%B8%AA%E4%BA%BA%E5%A4%B4%E5%83%8F%E4%BA%8E%E6%96%87%E4%BA%AE.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">不是小阳</div><div class="author-info-description">分享一些技术和一些平平无奇的生活</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">15</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/bushixiaoyang"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/bushixiaoyang" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:zhanghongyang321@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到不是小阳の小破站<br>灵感本易逝，行动应当下。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B0%94%E7%BC%B8%E5%88%86%E7%B1%BB%E4%B8%8E%E9%80%89%E5%9E%8B%E6%8C%87%E5%8D%97"><span class="toc-number">1.</span> <span class="toc-text">气缸分类与选型指南</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E6%B0%94%E7%BC%B8%E7%9A%84%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.</span> <span class="toc-text">一、气缸的分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E5%8A%A8%E4%BD%9C%E6%96%B9%E5%BC%8F%E3%80%81%E7%BB%93%E6%9E%84%E5%BD%A2%E5%BC%8F%E4%B8%8E%E5%8A%9F%E8%83%BD%E7%94%A8%E9%80%94%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.1.</span> <span class="toc-text">按动作方式、结构形式与功能用途分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%89%E5%AE%89%E8%A3%85%E6%96%B9%E5%BC%8F%E3%80%81%E9%A9%B1%E5%8A%A8%E5%8E%8B%E5%8A%9B%E4%B8%8E%E7%89%B9%E6%AE%8A%E7%8E%AF%E5%A2%83%E5%88%86%E7%B1%BB"><span class="toc-number">1.1.2.</span> <span class="toc-text">按安装方式、驱动压力与特殊环境分类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E6%B0%94%E7%BC%B8%E9%80%89%E5%9E%8B%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.</span> <span class="toc-text">二、气缸选型方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E7%A7%8D%E9%80%89%E5%9E%8B%E6%96%B9%E6%B3%95%E5%AF%B9%E6%AF%94"><span class="toc-number">1.2.1.</span> <span class="toc-text">三种选型方法对比</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-%E7%90%86%E8%AE%BA%E8%AE%A1%E7%AE%97%E6%B3%95%EF%BC%88%E6%A0%B8%E5%BF%83%E6%96%B9%E6%B3%95%EF%BC%89"><span class="toc-number">1.3.</span> <span class="toc-text">1. 理论计算法（核心方法）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E6%AD%A5%EF%BC%9A%E7%A1%AE%E5%AE%9A%E8%B4%9F%E8%BD%BD%E5%8A%9B-F"><span class="toc-number">1.3.1.</span> <span class="toc-text">第一步：确定负载力 (F)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E9%80%89%E5%AE%9A%E8%B4%9F%E8%BD%BD%E7%8E%87-eta"><span class="toc-number">1.3.2.</span> <span class="toc-text">第二步：选定负载率 (\eta)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E6%AD%A5%EF%BC%9A%E8%AE%A1%E7%AE%97%E7%BC%B8%E5%BE%84-D"><span class="toc-number">1.3.3.</span> <span class="toc-text">第三步：计算缸径 (D)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E6%AD%A5%EF%BC%9A%E9%80%89%E5%AE%9A%E8%A1%8C%E7%A8%8B-S"><span class="toc-number">1.3.4.</span> <span class="toc-text">第四步：选定行程 (S)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E6%AD%A5%EF%BC%9A%E6%A0%A1%E6%A0%B8%E7%BC%93%E5%86%B2%E8%83%BD%E5%8A%9B"><span class="toc-number">1.3.5.</span> <span class="toc-text">第五步：校核缓冲能力</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AD%E6%AD%A5%EF%BC%9A%E7%A1%AE%E5%AE%9A%E5%AE%89%E8%A3%85%E5%BD%A2%E5%BC%8F%E4%B8%8E%E6%8E%A5%E5%8F%A3"><span class="toc-number">1.3.6.</span> <span class="toc-text">第六步：确定安装形式与接口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E4%B8%83%E6%AD%A5%EF%BC%9A%E9%80%89%E5%AE%9A%E9%99%84%E4%BB%B6"><span class="toc-number">1.3.7.</span> <span class="toc-text">第七步：选定附件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AC%AC%E5%85%AB%E6%AD%A5%EF%BC%9A%E6%A0%B8%E7%AE%97%E8%80%97%E6%B0%94%E9%87%8F%E4%B8%8E%E9%85%8D%E7%AE%A1%E5%8F%A3%E5%BE%84"><span class="toc-number">1.3.8.</span> <span class="toc-text">第八步：核算耗气量与配管口径</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-%E6%9F%A5%E8%A1%A8%E6%B3%95%EF%BC%88%E6%A0%B7%E6%9C%AC%E6%B3%95%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">2. 查表法（样本法）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%BB%8F%E9%AA%8C%E7%B1%BB%E6%AF%94%E6%B3%95"><span class="toc-number">1.5.</span> <span class="toc-text">3. 经验类比法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E9%80%89%E5%9E%8B%E6%B5%81%E7%A8%8B%E6%80%BB%E7%BB%93"><span class="toc-number">1.6.</span> <span class="toc-text">三、选型流程总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E9%80%89%E5%9E%8B%E4%B8%AD%E5%B8%B8%E8%A7%81%E7%9A%84%E9%94%99%E8%AF%AF"><span class="toc-number">1.7.</span> <span class="toc-text">四、选型中常见的错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%BB%93%E8%AF%AD"><span class="toc-number">1.8.</span> <span class="toc-text">五、结语</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2026/09/29/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1-%E5%B7%A5%E5%85%B7/" title="机械设计-工具"><img src="/img/%E5%87%8C%E4%B9%B1%E9%BB%91%E5%8F%91-%E5%A3%81%E7%BA%B8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="机械设计-工具"/></a><div class="content"><a class="title" href="/2026/09/29/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1-%E5%B7%A5%E5%85%B7/" title="机械设计-工具">机械设计-工具</a><time datetime="2026-09-29T14:04:39.000Z" title="发表于 2026-09-29 22:04:39">2026-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E5%9B%9B%EF%BC%89/" title="标准件的选型（四）"><img src="/img/%E6%B3%A2%E5%A5%87%E9%85%B1%E7%89%B9%E5%86%99.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="标准件的选型（四）"/></a><div class="content"><a class="title" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E5%9B%9B%EF%BC%89/" title="标准件的选型（四）">标准件的选型（四）</a><time datetime="2026-09-29T13:29:28.000Z" title="发表于 2026-09-29 21:29:28">2026-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%89%EF%BC%89/" title="标准件的选型（三）"><img src="/img/%E5%8A%A8%E6%BC%AB%E6%8F%92%E7%94%BB-%E7%94%B5%E9%94%AF%E4%BA%BA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="标准件的选型（三）"/></a><div class="content"><a class="title" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%89%EF%BC%89/" title="标准件的选型（三）">标准件的选型（三）</a><time datetime="2026-09-29T12:43:37.000Z" title="发表于 2026-09-29 20:43:37">2026-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%BA%8C%EF%BC%89/" title="标准件的选型（二）"><img src="/img/%E5%B0%8F%E5%AD%A4%E7%8B%AC.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="标准件的选型（二）"/></a><div class="content"><a class="title" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%BA%8C%EF%BC%89/" title="标准件的选型（二）">标准件的选型（二）</a><time datetime="2026-09-29T12:43:06.000Z" title="发表于 2026-09-29 20:43:06">2026-09-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%80%EF%BC%89/" title="标准件的选型（一）"><img src="/img/%E4%BA%91%E6%9C%B5-%E4%BC%8A%E8%95%BE%E5%A8%9C-%E7%AA%97%E8%BE%B9.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="标准件的选型（一）"/></a><div class="content"><a class="title" href="/2026/09/29/%E6%A0%87%E5%87%86%E4%BB%B6%E7%9A%84%E9%80%89%E5%9E%8B%EF%BC%88%E4%B8%80%EF%BC%89/" title="标准件的选型（一）">标准件的选型（一）</a><time datetime="2026-09-29T12:42:31.000Z" title="发表于 2026-09-29 20:42:31">2026-09-29</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(/%5Cimg%5C%E6%99%9A%E9%9C%9E%E6%B5%B7%E6%BB%A9.png);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By 不是小阳</span></div><div class="footer_custom_text">这只是一个起点,但非终点,加油。jsut do it !</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><div class="js-pjax"></div><script src="//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
